@@ -7,3 +7,7 @@
 <h1 align="center">A house with a flying cow</p>
 
 ![house](https://user-images.githubusercontent.com/112972833/210786465-eadd40d6-8f01-4c79-9a0c-22559a02af3c.png)
+
+<h1 align="center">Сертификат курса BLENDER:START</p>
+
+![Kasyanenko_Vera_Mikhaylovna](https://user-images.githubusercontent.com/112972833/211212856-d780be29-3832-4c53-86a9-59297c45a7eb.png)
