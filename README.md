@@ -1,4 +1,4 @@
-# Courses that I have completed or are in the process of studying
+# Courses 
 
 ## [ITMO](https://github.com/VeraKasianenko/Courses/tree/main/ITMO_courses/)
 ## [Java](https://github.com/VeraKasianenko/Courses/tree/main/Java/)
