@@ -1,0 +1,1001 @@
+Иерархическое дерево
+
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <div>
+            <h1></h1>
+            <p></p>
+        </div>
+        <div class="empty"></div>
+        <ul>
+            <li class="first"></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </body>
+</html>
+
+
+Напишите HTML-код, описывающий дерево.
+
+
+
+
+Наследование
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Наследование</title>
+       <meta charset="utf-8">
+       <link href="https://fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1>Заголовок</h1>
+        <ul>
+            <li>Пункт списка</li>
+            <li>Пункт списка</li>
+            <li>Пункт списка</li>
+        </ul>
+        <p>Текст первого параграфа.</p>
+        <p>Текст второго параграфа.</p>
+    </body>
+</html>
+
+
+body{
+    font-family:'PT Sans', sans-serif;
+    color:#2980b9;
+    font-size:12px;
+}
+li{
+    color:#1abc9c
+}
+
+
+
+Цель 1Для всего текста на сайте установите цвет шрифта color:#2980b9; и размер шрифта font-size:12px;.
+Цель 2Переопределите цвет элементов списка на #1abc9c.
+
+
+
+
+
+
+
+
+Наследование «на пальцах» 
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Наследование «на пальцах»</title>
+       <meta charset="utf-8">
+       <link href="https://fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <p>Первая строка с произвольным текстом.</p>
+        <p class="selected">Вторая строка с <span>произвольным</span> текстом.</p>
+        <ul>
+            <li>Первый элемент списка</li>
+            <li class="selected">Второй <span>элемент</span> списка</li>
+            <li>Третий элемент списка</li>
+        </ul>
+    </body>
+</html>
+
+
+
+body {
+    font-family:'PT Sans', sans-serif;
+    color:#7f8c8d;
+    font-size:12px;
+}
+
+li .selected {
+    color:#e74c3c;
+}
+
+p.selected span {
+    color:#3498db
+}
+
+
+
+Цель 1Для всего сайта установите цвет шрифта #7f8c8d и размер шрифта 12px.
+Цель 2У элементов с классом selected измените цвет шрифта на #e74c3c.
+Цель 3Для тега span, лежащего внутри тега p с классом selected, установите цвет шрифта #3498db.
+
+
+
+
+Еще немного про наследование
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Еще немного про наследование</title>
+       <meta charset="utf-8">
+       <link href="https://fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <p>Первая строка с <a href="#">произвольным</a> текстом.</p>
+        <p>Вторая <span>строка</span> с произвольным текстом.</p>
+        <ul>
+            <li><a href="#">Первый элемент списка</a></li>
+            <li>Второй <span>элемент</span> списка</li>
+            <li>Третий элемент списка</li>
+        </ul>
+    </body>
+</html>
+
+body{
+    font-family:'PT Sans', sans-serif;
+    color:#7f8c8d;
+    line-height:16px;
+}
+
+a{
+    color:#3498db;
+}
+
+ul{
+    border:1px solid #1abc9c;
+    padding:25px;
+}
+
+
+Цель 1Задайте body цвет текста #7f8c8d и высоту строки line-height:16px;.
+Цель 2Задайте ссылкам цвет #3498db.
+Цель 3Тегу ul задайте рамки border:1px solid #1abc9c; и внутренние отступы padding:25px;.
+
+
+
+
+
+
+
+
+
+Наследуемые свойства
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Наследуемые свойства</title>
+       <meta charset="utf-8">
+       <link href="https://fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="block1">
+            <p>Строка текста в первом блоке</p>
+            <p>Еще одна строка текста в первом блоке</p>
+            <ul>
+                <li>Первый элемент списка</li>
+                <li>Второй элемент списка</li>
+                <li>Третий элемент списка</li>
+            </ul>
+        </div>
+        <div class="block2">
+            <p>Строка текста во втором блоке</p>
+            <p>Еще одна строка текста во втором блоке</p>
+            <ul>
+                <li>Первый элемент списка</li>
+                <li>Второй элемент списка</li>
+                <li>Третий элемент списка</li>
+            </ul>
+        </div>
+    </body>
+</html>
+
+
+body{
+    font-family:'PT Sans', sans-serif;
+    font-size:12px;
+    text-align:center;
+}
+
+.block1{
+    font-style:italic;
+}
+
+.block2{
+    cursor:pointer;
+}
+
+.block2 ul {
+    list-style-type:square;
+}
+
+
+Цель 1Задайте body размер шрифта 12px и выравнивание текста по центру text-align:center;.
+Цель 2Для .block1 задайте стиль текста курсивом font-style:italic;.
+Цель 3Для .block2 задайте стиль курсора при наведении cursor:pointer;.
+Цель 4Для ul внутри .block2 задайте квадратные маркеры list-style-type:square;
+
+
+
+
+
+
+
+
+Ненаследуемые свойства
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Ненаследуемые свойства</title>
+       <meta charset="utf-8">
+       <link href="https://fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="block1">
+            <p>Строка текста в первом блоке</p>
+            <p>Еще одна строка текста в первом блоке</p>
+            <ul>
+                <li>Первый элемент списка</li>
+                <li>Второй элемент списка</li>
+                <li>Третий элемент списка</li>
+            </ul>
+        </div>
+        <div class="block2">
+            <p>Строка текста во втором блоке</p>
+            <p>Еще одна строка текста во втором блоке</p>
+            <ul>
+                <li>Первый элемент списка</li>
+                <li>Второй элемент списка</li>
+                <li>Третий элемент списка</li>
+            </ul>
+        </div>
+    </body>
+</html>
+
+
+body{
+    font-family:'PT Sans', sans-serif;
+}
+
+.block1 {
+    padding:10px;
+    border:1px solid #1ABC9C;
+}
+
+.block2 ul {
+    background:#3498db;
+}
+
+.block2 li {
+    background:#E74C3C;
+}
+
+
+
+
+
+Принудительное наследование
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Принудительное наследование</title>
+       <meta charset="utf-8">
+       <link href="https://fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <p>Первый список</p>
+        <ul class="first-list">
+            <li>Первый элемент списка</li>
+            <li>Второй элемент списка</li>
+            <li>Третий элемент списка</li>
+        </ul>
+        <p>Второй список</p>
+        <ul class="second-list">
+            <li>Первый элемент списка</li>
+            <li>Второй элемент списка</li>
+            <li>Третий элемент списка</li>
+        </ul>
+    </body>
+</html>
+
+
+
+
+body{
+    font-family:'PT Sans', sans-serif;
+}
+ul{
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #666;
+    list-style: none;
+}
+
+.second-list li {
+    border: inherit;
+    margin: inherit;
+    padding: inherit;
+}
+
+
+
+
+Для элементов списка .second-list задайте значение inherit:
+
+Цель 1Cвойству border.
+Цель 2Cвойству margin.
+Цель 3Cвойству padding.
+
+
+
+
+
+
+
+
+Каскадирование
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Каскадирование</title>
+       <meta charset="utf-8">
+       <link href="https://fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="block1">
+            <p>Строка текста в первом блоке</p>
+            <p class="message">Еще одна строка текста в первом блоке</p>
+            <ul>
+                <li>Первый элемент списка</li>
+                <li>Второй элемент списка</li>
+                <li>Третий элемент списка</li>
+            </ul>
+        </div>
+        <div class="block2 message">
+            <p>Строка текста во втором блоке</p>
+            <p class="message">Еще одна строка текста во втором блоке</p>
+        </div>
+    </body>
+</html>
+
+
+
+body{
+    font-family:'PT Sans', sans-serif;
+}
+
+p{
+    font-size:11px;
+}
+
+.block1{
+    color:#1ABC9C
+}
+
+.message{
+    padding:5px;
+    border:1px solid #95A5A6;
+    color:#95A5A6;
+}
+
+
+Цель 1Для всех p задайте размер шрифта 11px.
+Цель 2Для блока .block1 установите цвет текста #1ABC9C.
+Цель 3Для злементов с классом .message установите внутренний отступ 5px, рамку 1px solid #95A5A6 и цвет текста #95A5A6.
+
+
+
+
+
+
+
+Битва за курочку
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Битва за курочку</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic" rel="stylesheet" type="text/css">
+        <link href="/assets/course66/battle.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1>Кому достанется курочка?</h1>
+        <div class="battle">
+            <div class="cat cat-keksik">Кексик</div>
+            <div class="cat cat-rudolf">Рудольф</div>
+            <div class="chicken to-keksik to-rudolf"></div>
+        </div>            
+    </body>
+</html>
+
+
+.to-rudolf{
+    margin-left:120px;
+}
+.to-keksik{
+    margin-left:-120px;
+}
+
+
+Цель 1Поменяйте CSS таким образом, чтобы курочка досталась Кексику!
+
+
+
+
+
+
+
+Битва за курочку. Раунд второй
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Битва за курочку. Раунд второй</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic" rel="stylesheet" type="text/css">
+        <link href="/assets/course66/battle.css" rel="stylesheet" type="text/css">
+        <style>
+            div.to-keksik{ /* Кексик закрепляет преимущество */
+                margin-left:-120px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Кому достанется курочка?</h1>
+        <div class="battle">
+            <div class="cat cat-keksik">Кексик</div>
+            <div class="cat cat-rudolf">Рудольф</div>
+            <div class="chicken to-keksik to-rudolf"></div>
+        </div>            
+    </body>
+</html>
+
+
+/* Усильте селектор этого правила, чтобы вырвать курочку */
+div.to-rudolf{
+    margin-left:120px;
+}
+
+
+Цель 1Помогите Рудольфу взять реванш и вернуть свою прелесть.
+
+
+
+
+
+
+
+Битва за курочку. Раунд третий
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Битва за курочку. Раунд третий</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic" rel="stylesheet" type="text/css">
+        <link href="/assets/course66/battle.css" rel="stylesheet" type="text/css">
+        <style>
+            .battle .to-rudolf{ /* Рудольф вцепился сильнее */
+                margin-left:120px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Кому достанется курочка?</h1>
+        <div class="battle">
+            <div class="cat cat-keksik">Кексик</div>
+            <div class="cat cat-rudolf">Рудольф</div>
+            <div class="chicken to-keksik to-rudolf"></div>
+        </div>            
+    </body>
+</html>
+
+
+/* Усильте селектор этого правила, чтобы вырвать курочку */
+.battle .to-keksik{
+    margin-left:-120px;
+}
+
+
+
+
+Цель 1Курочка должна снова вернуться к Кексику.
+
+
+
+
+
+
+
+
+
+
+
+Битва за курочку. Борьба накаляется
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Битва за курочку. Борьба накаляется</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic" rel="stylesheet" type="text/css">
+        <link href="/assets/course66/battle.css" rel="stylesheet" type="text/css">
+        <style>
+            #keks-vs-rudolf .to-keksik{ /* У Кекса железная хватка */
+                margin-left:-120px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Кому достанется курочка?</h1>
+        <div id="keks-vs-rudolf" class="battle">
+            <div class="cat cat-keksik">Кексик</div>
+            <div class="cat cat-rudolf">Рудольф</div>
+            <div class="chicken to-keksik to-rudolf"></div>
+        </div>            
+    </body>
+</html>
+
+
+
+/* Усильте селектор этого правила, чтобы вырвать курочку */
+#keks-vs-rudolf .to-rudolf{
+    margin-left:120px;
+}
+
+
+
+
+Цель 1И снова Рудольф должен вернуть своё.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Битва за курочку. Запрещённый приём
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Битва за курочку. Запрещённый приём</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic" rel="stylesheet" type="text/css">
+        <link href="/assets/course66/battle.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1>Кому достанется курочка?</h1>
+        <div id="keks-vs-rudolf" class="battle">
+            <div class="cat cat-keksik">Кексик</div>
+            <div class="cat cat-rudolf">Рудольф</div>
+            
+            <!-- Видя, как победа ускользает из лап,
+            Рудольф решается на запрещенный приём -->
+            <div style="margin-left:120px;" class="chicken to-keksik to-rudolf"></div>
+        </div>            
+    </body>
+</html>
+
+
+
+/* Усилением селектора здесь не обойтись.
+   Придётся ответить грубостью на грубость */
+.to-keksik{
+    margin-left:-120px !important;
+}
+
+
+Цель 1Восстановите справедливость и верните заслуженную награду Кексику.
+
+
+
+
+
+
+
+
+
+Еще одна задачка на специфичность
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Еще одна задачка на специфичность</title>
+       <meta charset="utf-8">
+       <link href="https://fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic" rel="stylesheet" type="text/css">
+       <link href="/assets/course66/catinbox.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="floor">
+            <span class="cat-in-box">Кексик</span>
+        </div>
+    </body>
+</html>
+
+
+span{
+    background-color:#27ae60; /* Зеленый */
+}
+div span{
+    background-color:#2980b9; /* Синий */
+}
+#floor .cat-in-box{
+    background-color: #34495e; /* Мокрый асфальт */
+}
+.cat-in-box{ 
+    background-color: #8e44ad; /* Фиолетовый */
+}
+#floor span{
+    background-color: #c0392b; /* Красный */
+}
+div .cat-in-box{
+    background-color: #e67e22; /* Оранжевый */
+}
+
+
+Цель 1Скопируйте кусок CSS-кода из блока с теорией и проверьте какого цвета будет коробка.
+
+
+
+
+
+
+
+Расчет значения специфичности
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Расчет значения специфичности</title>
+       <meta charset="utf-8">
+       <link href="https://fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <ol>
+            <li>
+                <p>Рассчитайте значение специфичности для селектора:</p>
+                <pre>.text li.error span{}</pre>
+                <p>Ответ <input type="text" name="exercise_1"></p> 
+                <!-- 0022 -->
+            </li>
+            <li>
+                <p>Рассчитайте значение специфичности для селектора:</p>
+                <pre>#wrapper .text #message p a{}</pre>
+                <p>Ответ <input type="text" name="exercise_2"></p>
+                <!-- 0212 -->
+            </li>
+            <li>
+                <p>Рассчитайте значение специфичности для селектора:</p>
+                <pre>#main .content a:hover{}</pre>
+                <p>Ответ <input type="text" name="exercise_3"></p>
+                <!-- 0121 -->
+            </li>
+        </ol>
+    </body>
+</html>
+
+
+body{
+    font-family:'PT Sans', sans-serif;
+}
+li{
+    margin-bottom:30px;
+}
+pre{
+    max-width:350px;
+    padding:5px 10px;
+    background:#F7F7F9;
+    border:1px solid #E1E1E8;
+    border-radius:3px;
+}
+input[type="text"]{
+    width:50px;
+    padding:3px;
+    margin-left:5px;
+    font-family:'PT Sans', sans-serif;
+    vertical-align: middle;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+
+
+
+Еще задачка на порядок кода
+
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Еще задачка на порядок кода</title>
+	    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic" rel="stylesheet" type="text/css">
+	    <link rel="stylesheet" href="/assets/course66/catinbox.css">
+	</head>
+	<body>
+		<div class="boxes">
+			<div class="box cat-keksik">Кексик</div>
+			<div class="box cat-rudolf">Рудольф</div>
+			<div class="box cat-snezhok">Снежок</div>
+		</div>
+	</body>
+</html>
+
+
+.cat-snezhok {
+    background-color: #2ecc71; /* Зеленый */
+}
+
+.cat-keksik {
+    background-color: #e74c3c; /* Красный */
+}
+
+.box{
+	background-color: #bdc3c7; /* Серый */
+}
+
+.cat-rudolf {
+    background-color: #3498db; /* Синий */
+}
+
+
+/*
+.cat-snezhok {
+    background-color: #2ecc71; 
+}
+
+.box{
+	background-color: #bdc3c7; 
+}
+
+.cat-keksik {
+    background-color: #e74c3c; 
+}
+.cat-rudolf {
+    background-color: #3498db; 
+}
+*/
+
+
+/*
+.box{
+	background-color: #bdc3c7;
+}
+
+.cat-keksik {
+    background-color: #e74c3c;
+}
+.cat-rudolf {
+    background-color: #3498db;
+}
+.cat-snezhok {
+    background-color: #2ecc71; 
+}
+*/
+
+
+
+Изменением порядка объявления стилей добейтесь, чтобы
+
+Цель 1Кексик и Снежок сидели в серых коробках, а Рудольф в синей.
+Цель 2Кексик сидел в красной коробке, Рудольф — в синей, а Снежок — в серой.
+Цель 3Кексик сидел в красной коробке, Рудольф — в синей, а Снежок — в зеленой.
+
+
+
+
+
+
+Перекрестное наследование
+
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>Перекрестное наследование</title>
+	    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+	    <div class="cats">
+    		<div class="cat cat-keksik">Кексик</div>
+    		<div class="cat cat-rudolf">Рудольф</div>
+    		<div class="cat cat-snezhok">Снежок</div>
+    		<div class="cat cat-adolf">Адольф</div>
+	    </div>
+	</body>
+</html>
+
+
+Цель 1Для всех тегов div внутри блока .cats установите
+класс cat.
+Цель 2Для каждого кота установите соответствующий ему класс cat-keksik, cat-rudolf, cat-snezhok, cat-adolf.
+
+
+
+
+
+
+
+Испытание: взломанный котопрофайл
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Испытание: взломанный котопрофайл</title>
+        <meta charset="utf-8">
+        <style>
+        /* Будешь знать, как сувать лапы, куда не надо,
+           шерстяной неудачник! */
+            #info-title,
+            .profile .button{
+                background:#4DFE15;
+            }
+            .profile div.fact{
+                background:#FF00DC;
+            }
+            .profile .fact div{
+                color:#02F801;
+            }
+            .photo span{
+                margin:0;
+                height:20px;
+                text-align:right;
+            }
+            #miska{
+                margin-right:50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="profile">
+            <div class="photo">
+                <img src="/assets/course66/cat_walk.png">
+                <span class="button stroke">Погладить</span>
+                <span class="button feed">Накормить</span>
+                <span class="button startle">Напугать</span>
+            </div>
+            <div class="info">
+                <h2 id="info-title">Общая информация</h2>
+                <div class="fact">
+                    <div class="title">Имя</div>
+                    <div class="value">Феликс</div>
+                </div>
+                <div class="fact">
+                    <div class="title">Позывные</div>
+                    <div class="value">Кто в тапки нассал?</div>
+                </div>
+                <div class="fact">
+                    <div class="title">Вероисповедание</div>
+                    <div class="value">Верю в холодильник</div>
+                </div>
+                <div class="fact">
+                    <div class="title">Политические</div>
+                    <div class="value">Продам все за еду</div>
+                </div>
+                <h2 style="margin-top:-50px;padding:0;">Альбомы</h2>
+                <div class="albums">
+                    <img src="/assets/course66/cat_drink.png">
+                    <img id="miska" src="/assets/course66/cat_hungry.png">
+                    <img src="/assets/course66/cat_sing.png">
+                    <img src="/assets/course66/cat_pirate.png">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+html, body{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:Tahoma, Arial, sans-serif;
+    font-size:12px;
+    width:550px;
+    height:300px;
+}
+.profile{
+    padding:5px 10px;
+}
+.profile img{
+    display:block;
+    padding:10px;
+    border: 2px solid #34495e;
+    border-radius:8px;
+}
+.profile .photo{
+    float:left;
+    width:152px;
+}
+.profile .info{
+    float:left;
+    width:368px ;
+    margin-left:10px;
+}
+.info h2{
+    margin:0 !important;
+    padding:10px !important;
+    font-size:12px;
+    font-weight:normal;
+    background:#34495e !important;
+    color:#fff !important;
+    border-radius:4px;
+}
+.fact{
+    padding:10px;
+    background:white !important;
+}
+.fact:nth-child(odd){
+    background:#ecf0f1 !important;
+}
+.fact:after{
+    content:"";
+    clear:both;
+    display:table;
+}
+.fact .title{
+   float:left;
+   width:120px;
+   text-align:right;
+   color:#7f8c8d !important;
+}
+.fact .value{
+   margin-left:140px;
+   color:#34495e !important;
+}
+.albums{
+    margin-top:5px;    
+}
+.albums img{
+    float:left;
+    margin-right:5px !important;
+}
+.albums img:last-child{
+    margin-right:0 !important;
+}
+.button{
+    display:block;
+    height:30px !important;
+    margin:5px 0 !important;
+    text-align:center !important;
+    line-height:30px;
+    color:#fff;
+    border-radius:4px;
+}
+.stroke{
+    background:#3498db !important;
+}
+.feed{
+    background:#2ecc71 !important;
+}
+.startle{
+    background:#e74c3c !important;
+}
+
+
+
+Вернуть как было
+
+
+
+
+
