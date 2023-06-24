@@ -1,0 +1,749 @@
+Главный текстовый тег — span 
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Главный текстовый тег — span</title>
+    </head>
+    <body>
+        <h1>Прогрессивное улучшение</h1>
+
+        <p>Нельзя просто так взять и рассказать про Progressive Enhancement, не упомянув о <span class="important">Graceful Degradation</span>. В чем же разница между этими понятиями? Как уже говорилось в более ранней статье, Graceful Degradation можно перевести, как <span class="note">отказоустойчивость</span>.</p>
+
+        <p>Это очень широкое понятие, но в контексте веба его можно понимать как отказоустойчивость клиентских <span class="error">веб-интерфейсов</span>, серверной части сайтов и так далее. В этой статье Graceful Degradation будет пониматься как отказоустойчивость клиентских веб-интерфейсов.</p>
+    </body>
+</html>
+
+
+Используйте в тексте теги <span> со следующими классами:
+
+Цель 1important,
+Цель 2note,
+Цель 3error.
+
+
+
+
+
+
+Свойство font-size: задаем размер шрифта
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Свойство font-size: задаем размер шрифта</title>
+    </head>
+    <body>
+        <h1>Как проявляется Graceful Degradation</h1>
+
+        <p><span class="bigger">Graceful Degradation</span> может выражаться в возможности работы при отключенном JavaScript, в достаточно аккуратном отображении интерфейса в браузере, не поддерживающем новые свойства CSS3, в адекватном отображении сайта при отключенных изображениях.</p>
+
+        <p>В каждом из этих случаев работа пользователя с интерфейсом будет в принципе возможна, <span class="smaller">хотя и не так удобна</span>.</p>
+    </body>
+</html>
+
+h1 {
+    font-size:1em;
+}
+
+.bigger {
+    font-size:1.5em;
+}
+
+.smaller {
+    font-size:0.7em;
+}
+
+
+
+Цель 1Задайте заголовку размер 1em.
+Цель 2Тегу с классом bigger размер 1.5em.
+Цель 3Тегу с классом smaller размер 0.7em.
+
+
+
+
+
+
+
+Свойство font-weight: толщина начертания
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Свойство font-weight: толщина начертания</title>
+    </head>
+    <body>
+        <h1>Progressive Enhancement</h1>
+
+        <p>Что же такое <span class="bold">Progressive Enhancement</span>? Чаще всего этот термин переводят, как <span class="bold">прогрессивное улучшение</span>. Прогрессивное улучшение предполагает, что веб-интерфейсы должны создаваться поэтапно, циклически, от простого к сложному. На каждом из этапов должен получаться законченный веб-интерфейс, который будет лучше, красивее и удобнее предыдущего. Можно сказать, что сейчас таких этапов четыре:</p>
+
+        <ol>
+            <li>«Старый-добрый-HTML» этап</li>
+            <li>CSS этап</li>
+            <li>CSS3 этап</li>
+            <li>JavaScript этап</li>
+        </ol>
+    </body>
+</html>
+
+
+h1 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.bold {
+    font-weight: bold
+}
+
+li {
+    font-weight: bold
+}
+
+
+Цель 1Cделайте текст заголовка нежирным,
+Цель 2текст тегов с классом bold — полужирным
+Цель 3и текст пунктов списка — полужирным.
+
+
+
+
+
+
+
+Свойство font-style: курсив
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Свойство font-style: курсив</title>
+    </head>
+    <body>
+        <h1>«Старый-добрый-HTML» этап</h1>
+
+        <p>На первом этапе исходное содержание страницы размечается с помощью HTML. На этом этапе необходимо сделать логичную и семантически правильную разметку. Никакого дополнительного оформления не осуществляется. В результате получается <em>корректно размеченный</em> HTML-документ, который браузер отображает так, как считает нужным.</p>
+
+        <p>Такой документ можно назвать <span class="italic">«наименьшим общим знаменателем»</span>, так как он будет корректно отображаться в любом, даже самом простом, браузере. Прогрессивное улучшение настаивает, что первый этап является самым важным, так как <span class="italic">нет в вебе ничего важнее, чем содержание</span>.</p>
+    </body>
+</html>
+
+
+
+h1 {
+    font-size: 24px;
+    font-style: italic;
+}
+
+em {
+    font-style: normal;
+}
+
+.italic {
+    font-style: italic;
+}
+
+Цель 1Уберите курсивное начертание для тега <em>.
+Цель 2Выделите курсивом заголовок.
+Цель 3Выделите курсивом теги с классом italic.
+
+
+
+
+
+
+
+Свойство font-family: шрифт
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Свойство font-family: шрифт</title>
+    </head>
+    <body>
+        <h1>CSS этапы</h1>
+
+        <p>На втором этапе документ оформляется с помощью старого доброго CSS и обретает более аккуратный вид: появляется сетка страницы, задаются параметры шрифта элементов, фоновые изображения и так далее.</p>
+
+        <p>На третьем этапе применяются новые возможности из семейства спецификаций CSS3, и документ доводится до блеска: полупрозрачные плашки, круглые уголки, тени. Также с помощью CSS3 можно добавить различные анимационно-декоративные фишечки: постепенное затухание или смещение элементов, подсвечивание полей форм и так далее.</p>
+    </body>
+</html>
+
+
+
+h1 {
+    font-size: 24px;
+    font-family: "Tahoma";
+}
+
+body {
+    font-family: "Arial";
+}
+
+
+
+Цель 1Измените шрифт заголовка на Tahoma.
+Цель 2Измените шрифт абзацев на Arial.
+
+
+
+
+
+
+Свойство color: цвет текста
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Свойство color: цвет текста</title>
+    </head>
+    <body>
+        <h1>JavaScript этап</h1>
+
+        <p>На четвёртом этапе до ума доводится процесс <i>взаимодействия</i> с интерфейсом: различные AJAX решения, динамические элементы, те же календарики и так далее. Тут во всю используется JavaScript. Этот этап отвечает за удобство.</p>
+
+        <p>Резюмируем назначение описанных этапов:</p>
+
+        <ol>
+            <li>Смысл документа, логическая разметка. Технология: HTML.</li>
+            <li>Внешний вид. Технология: CSS.</li>
+            <li>Безупречный внешний вид. Технология: CSS3.</li>
+            <li>Взаимодействие, интерактивность, удобство. Технология: JavaScript.</li>
+        </ol>
+    </body>
+</html>
+
+
+h1 {
+    font-size: 24px;
+    color: #B94A48
+}
+
+i {
+    color: green;
+}
+
+li {
+    color: rgb(58, 135, 173);
+}
+
+
+
+Цель 1Задайте <h1> цвет #B94A48,
+Цель 2<i> цвет green,
+Цель 3<li> цвет rgb(58, 135, 173).
+
+
+
+
+Свойство text-decoration: подчеркивание и другие эффекты
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Свойство text-decoration: подчеркивание и другие эффекты</title>
+    </head>
+    <body>
+        <h1>Отличия Graceful Degradation и Progressive Enhancement</h1>
+
+        <p>Веб-интерфейс, созданный добросовестно в соответствии с <span class="under">Graceful Degradation</span>, будет вести себя так же, как и веб-интерфейс, построенный по <span class="over">Progressive Enhancement</span>.</p>
+
+        <ul>
+            <li><span class="under">Graceful Degradation</span> — более широкое понятие, чем <span class="over">Progressive Enhancement</span>, который ограничен только веб-интерфейсами.</li>
+            <li><span class="over">Progressive Enhancement</span> задает вектор движения <span class="under">(начинай с простого!)</span>, <span class="through">а для Graceful Degradation это не так важно</span>.</li>
+            <li>Progressive Enhancement настаивает на важности содержания, <span class="through">а для Graceful Degradation оно на втором плане</span>.</li>
+        </ul>
+    </body>
+</html>
+
+
+h1 {
+    font-size: 24px;
+}
+
+.under {
+    text-decoration: underline;
+}
+
+.over {
+    text-decoration: overline;
+}
+
+.through {
+    text-decoration: line-through;
+}
+
+
+Цель 1Элементы с классом under должны быть подчеркнуты.
+Цель 2С классом over — надчеркнуты.
+Цель 3С классом through — зачеркнуты.
+
+
+
+
+
+Декоративное подчеркивание
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Декоративное подчеркивание</title>
+    </head>
+    <body>
+        <h1>Почему появился Progressive Enhancement</h1>
+
+        <p><a class="dashed" href="#">Ранее говорилось</a>, что если взять и в соответствии с Graceful Degradation максимально качественно сделать веб-интерфейс, то получится то же самое, что и при применении <span class="dashed">Progressive Enhancement</span>. Так зачем же было придумывать этот enhancement?</p>
+
+        <p>Ответ прост: мало кто делал <span class="dashed">Graceful Degradation</span> очень качественно. Это расстраивало действительно высококлассных и ответственных разработчиков. Ведь сказать, что «я — молодец и делаю Graceful Degradation» мог почти любой, но затраты сил и времени у разных разработчиков различались на порядки.</p>
+    </body>
+</html>
+
+
+h1 {
+    font-size: 24px;
+}
+
+.dashed {
+    text-decoration: none;
+    color: #0088CC;
+    border-bottom: 1px dashed #0088CC;
+}
+
+.dashed:hover {
+    border-bottom: none;
+}
+
+
+Добавьте CSS-правилу для класса dashed свойства:
+
+Цель 1text-decoration: none;,
+Цель 2color: #0088CC;,
+Цель 3border-bottom: 1px dashed #0088CC;
+
+
+
+
+Задаем регистр символов с помощью text-transform
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Задаем регистр символов с помощью text-transform</title>
+    </head>
+    <body>
+        <h1>Плохой Graceful Degradation</h1>
+
+        <p>В самом простом случае плохого <span class="lower">Graceful Degradation</span> делается сайт для самых современных браузеров, а для устаревших в верхней части страницы добавляется сообщение, что <span class="lower">БРАУЗЕР СТАРОВАТ</span>. При этом никого не волнует, что будет происходить с сайтом в старом браузере: развалится он или нет, будет виден весь контент или что-то исчезнет.</p>
+
+        <p><span class="capital">Другой распространенный вариант плохого Graceful Degradation — интерфейс перестает работать при отключенном JavaScript</span>. Простой пример: попробуйте отправить сообщение во ВКонтакте при отключенном JavaScript.</p>
+    </body>
+</html>
+
+
+h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
+.capital {
+    text-transform: capitalize;
+}
+
+
+Цель 1Заголовок должен быть набран прописными.
+Цель 2Теги с классом lower — строчными.
+Цель 3Теги с классом capital — каждое слово начинается с прописной.
+
+
+
+
+
+
+Управляем пробелами: white-space
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Управляем пробелами: white-space</title>
+    </head>
+    <body>
+        <h1>Так                 возник                Progressive                Enhancement</h1>
+
+        <p class="nowrap">Короче говоря, такая халтура с отказоустойчивостью порядком надоела «правильным» разработчикам, надо было что-то делать.</p>
+
+        <p class="like-pre">
+            Progressive Enhancement возник
+            как реакция на плохой Graceful Degradation.
+            Теперь действительно хорошие
+            разработчики и дизайнеры
+            могут делать Progressive Enhancement,
+            а плохие не могут,
+            так как это сложнее и трудозатратнее.
+            Заодно новый подход впитал в себя
+            все лучшие практики
+            из Graceful Degradation.
+        </p>
+    </body>
+</html>
+
+h1 {
+    font-size: 24px;
+    white-space: pre-wrap;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.like-pre {
+    white-space: pre;
+}
+
+
+Проверьте, как свойство white-space влияет на отображение текста.
+
+Цель 1Заголовку задайте white-space: pre-wrap;.
+Цель 2Абзацу с классом nowrap задайте white-space: nowrap;.
+Цель 3Абзацу с классом like-pre задайте white-space: pre;
+
+
+
+
+
+
+Горизонтальное выравнивание текста: text-align
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Горизонтальное выравнивание текста: text-align</title>
+    </head>
+    <body>
+        <h1>Progressive Enhancement и Responsive Design</h1>
+
+        <p class="right">В последнее время набирает популярность подход, который называется responsive design, по-русски адаптивный или отзывчивый дизайн.</p>
+
+        <p class="justify">Суть подхода заключается в том, чтобы с помощью определенного набора техник (резиновые сетки, резиновые изображения, CSS media queries) сделать так, чтобы веб-страница адекватно отображалась на различных устройствах: от смартфона до широкоформатного монитора.</p>
+    </body>
+</html>
+
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.justify {
+    text-align: justify;
+}
+
+
+
+Цель 1Выровняйте заголовок по центру.
+Цель 2Абзац с классом right — по правому краю.
+Цель 3Абзац с классом justify — по ширине.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Вертикальное выравнивание: vertical-align
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Вертикальное выравнивание: vertical-align</title>
+    </head>
+    <body>
+        <h1>Составляющие адаптивного дизайна</h1>
+
+        <p>При технической реализации адаптивного дизайна (верстке адаптивного макета), применяются следующие подходы и технологии:</p>
+
+        <ul>
+            <li>Резиновая верстка <small class="top">fluid layout</small></li>
+            <li>Медиазапросы <small class="middle">media queries</small></li>
+            <li>Резиновые картинки <small class="bottom">fluid images</small></li>
+        </ul>
+    </body>
+</html>
+
+
+h1 {
+    font-size: 36px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 28px;
+}
+
+li {
+    margin-bottom: 5px;
+    white-space: nowrap;
+    background: #f5f5f5;
+
+}
+
+small {
+    font-size: 8px;
+    color: #666;
+}
+
+.top {
+    vertical-align: top;
+}
+
+.middle {
+    vertical-align: middle;
+}
+
+.bottom {
+    vertical-align: bottom;
+}
+
+
+Цель 1Тегу с классом top задайте vertical-align: top;.
+Цель 2Тегу с классом middle задайте vertical-align: middle;.
+Цель 3Тегу с классом bottom задайте vertical-align: bottom;.
+
+
+
+
+
+
+
+
+Верхние и нижние индексы на CSS
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Верхние и нижние индексы на CSS</title>
+    </head>
+    <body>
+        <h1>Mobile first!</h1>
+
+        <p>Одновременно появился похожий подход, который называется Mobile First <sup>[дословно:</sup> <span class="sup">сначала для мобильников]</span>. По сути, это тот же адаптивный дизайн, но с обязательным требованием: начинать проектирование интерфейса с мобильной версии <sub>[или можно сказать:</sub> <span class="sub">с самого маленького экрана]</span>.</p>
+
+        <hr>
+
+        <p>Отвлечемся от статьи на примеры формул:</p>
+        <ul>
+            <li>H<sub>2</sub>O и</li>
+            <li>H<span class="sub">2</span>O<br></li>
+            <li>sin<sup>2</sup>x и</li>
+            <li>sin<span class="sup">2</span>x</li>
+        </ul>
+    </body>
+</html>
+
+
+Имитируем теги sup и sub с помощью CSS:
+
+Цель 1Для класса .sub добавьте vertical-align: sub;.
+Цель 2Для класса .sup добавьте vertical-align: super;.
+Цель 3Обоим правилам добавьте font-size: 12px;.
+
+
+
+
+
+
+
+Свойство line-height: управляем высотой строки
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Свойство line-height: управляем высотой строки</title>
+    </head>
+    <body>
+        <h1>Responsinve + Mobile First</h1>
+
+        <p class="low"><span>Соотношение подходов Responsive Design и Mobile First очень похоже на соотношение Graceful Degradation и Progressive Enhancement. Первый подход в паре общий, а второй подход частный и добавляет к первому дополнительные требования: «начинай с простого HTML», «начинай проектировать с мобильной версии», «погладь кота».</span></p>
+
+        <p class="high"><span>Стоит отметить, что озвученные подходы отлично сочетаются друг с другом и отлично друг друга дополняют. И в скором будущем все топовые исполнители будут заявлять: «Мы делаем Mobile First + Progressive Enhancement».</span></p>
+    </body>
+</html>
+
+
+h1 {
+    font-size: 24px;
+}
+
+span {
+    background: rgba(210, 210, 210, 0.3);
+}
+
+.low {
+    line-height: 10px;
+}
+
+.high {
+    line-height: 1.5;
+}
+
+
+Измените межстрочный интервал у абзацев:
+
+Цель 1Абзацу с классом .low задайте интервал 10px.
+Цель 2Абзацу с классом .high задайте интервал 1.5.
+
+
+
+
+
+
+Вертикальный ритм текста
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Вертикальный ритм текста</title>
+    </head>
+    <body>
+        <h1>Вертикальный ритм</h1>
+
+        <p>В веб-дизайне существует понятие «вертикальный ритм текста». Оно достаточно сложное и мы не будем глубоко в него вдаваться. Отметим лишь, что хороший вертикальный ритм улучшает восприятие текста.</p>
+
+        <h1>Правило относительных размеров</h1>
+
+        <p>Чтобы сохранить вертикальный ритм и хорошую читабельность текста при любом размере шрифта, нужно задавать размеры шрифта, межстрочный интервал и вертикальные отступы между заголовками и абзацами в относительных единицах.</p>
+
+        <p>Тогда, как бы пользователь ни изменял размер шрифта, ваш текст останется читабельным и удобным для восприятия. В этом задании вы потренируетесь использовать относительные единицы измерения.</p>
+    </body>
+</html>
+
+
+
+body {
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+h1 {
+    margin-top: 0.7em;
+    font-size: 1.3em;
+}
+
+p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+
+Цель 1Для body задайте font-size: 16px;. Смотрите, как слипся текст.
+Цель 2Для body измените межстрочный интервал на 1.3.
+Цель 3Для заголовка измените размер шрифта на 1.3em, а отступ сверху на 0.7em.
+Цель 4Для абзацев измените отступы на 0.5em.
+
+
+
+
+
+
+
+
+Испытание: рецепт на CSS
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Пшенная каша с тыквой</title>
+    </head>
+    <body>
+        <h1>Пшенная каша с тыквой</h1>
+        <ol>
+            <li>Пшено, 1 стакан</li>
+            <li>Вода H<span class="sub">2</span>O или AquaLife<span class="sup">®</span>, 2 стакана</li>
+            <li>Молоко, <span class="del">1,5 стакана</span> 2 стакана</li>
+            <li>Масло сливочное, 3 ст.л.</li>
+            <li>Тыква, около 300г</li>
+            <li>Соль, по вкусу</li>
+            <li><span class="underline">Сахар демерара, посыпать сверху</span></li>
+        </ol>
+        <hr>
+        <span class="italic">Примечания:</span><br>
+        Пшено необходимо перебрать<br>
+        Тыкву нарезать кубиками 1х1 см<br>
+        Кашу перемешивать не надо<br>
+    </body>
+</html>
+
+
+body {
+    width: 260px;
+    margin: 0;
+    padding: 0 10px;
+    font-family: "Times New Roman", serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+.sub {
+    vertical-align: sub;
+    font-size:12px;
+}
+
+.sup {
+    vertical-align: super;
+    font-size:12px;
+}
+
+.del {
+    text-decoration: line-through;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.italic {
+    font-style: italic;
+}
+
+
+
+Повторить
