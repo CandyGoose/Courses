@@ -1,0 +1,73 @@
+/* Общие стили для документа и блоков, менять не надо */
+
+body {
+    width: 450px;
+    margin: 0;
+    padding: 10px;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+.logo,
+.contacts,
+.about-us,
+.main-menu,
+.footer {
+    padding: 10px 20px 10px 20px;
+    background-color:#f5f5f5;
+    border: 2px solid #cccccc;
+        color:#ffffff
+
+}
+
+/* Собственные стили блоков */
+
+.header {
+    min-height: 40px;
+    margin-bottom: 20px;
+    color:#ffffff
+}
+
+.logo {
+    float: left;
+    width: 230px;
+    text-align: center;
+    font-weight: bold;
+    background-color:#333333
+}
+
+.contacts {
+    float: right;
+    width: 110px;
+    text-align: center;
+    font-style: italic;
+    background-color:#333333
+    
+}
+
+.about-us {
+    width: 230px;
+    float: left;
+    margin-bottom: 20px;
+    color:#000000
+
+}
+
+.about-us h1 {
+    font-size: 20px
+}
+
+.about-us p {
+    font-size: 12px;
+}
+
+.main-menu {
+    float: right;
+    width: 110px;
+    
+}
+
+.footer {
+    clear: both;
+    background-color:#333333
+}

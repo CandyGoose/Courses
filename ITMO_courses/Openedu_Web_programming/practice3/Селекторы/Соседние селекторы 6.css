@@ -1,0 +1,19 @@
+.first {
+    background-color:white;
+}
+
+.first + li {
+    background-color:red;
+}
+
+.first + li + li {
+    background-color:white;
+}
+
+.fourth {
+    background-color:white;
+}
+
+.fourth + li {
+    background-color:red;
+}

@@ -1,0 +1,1236 @@
+    
+
+Поток документа [1/20]
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Поток документа</title>
+    </head>
+    <body>
+        <h1 class="outline">Поток документа</h1>
+        <div class="outline">Блочные элементы — прямоугольнки, которые располагаются слева направо и сверху вниз.</div>
+        <div class="outline">
+            <div class="outline">Можно вкладывать блоки друг в друга и выстраивать колонки.</div>
+            <div class="column outline">Колонка 1</div>
+            <div class="column outline">Колонка 2</div>
+            <div class="column outline">Колонка 3</div>
+        </div>
+        <div class="outline"><span class="outline">Строчные элементы и текст просто переносятся на</span> следующую строку, если не хватает места.</div>
+    </body>
+</html>
+
+
+.outline {
+    margin: 5px;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px dotted #666;
+}
+
+.column {
+    display: inline-block;
+}
+
+
+
+
+
+
+
+Относительное позиционирование [2/20]
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Относительное позиционирование</title>
+    </head>
+    <body>
+        <div class="block">Блок 1</div>
+        <div class="block-shadow">
+            <div class="block-relative">Блок 2</div>
+        </div>
+        <div class="block">Блок 3</div>
+    </body>
+</html>
+
+
+body {
+    padding:20px;
+}
+
+.block {
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    background: #3A78A1;
+}
+
+.block-relative {
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    background: #3A78A1;
+    position: relative;
+}
+
+.block-shadow {
+    background: #ccc;
+}
+
+
+
+
+Цель 1: Задайте блоку с классом block-relative относительное позиционирование.
+
+
+
+
+
+
+
+
+
+position:relative и top [3/20]
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Свойство top</title>
+    </head>
+    <body>
+        <div class="block">Блок 1</div>
+        <div class="block-shadow">
+            <div class="block-relative">Блок 2</div>
+        </div>
+        <div class="block">Блок 3</div>
+    </body>
+</html>
+
+
+
+body {
+    padding:20px;
+}
+
+.block {
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    background: #3A78A1;
+}
+
+.block-relative {
+    position:relative;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    background: #3A78A1;
+    top: 10px;
+    top: -10px;
+}
+
+.block-shadow {
+    background: #ccc;
+}
+
+
+
+
+Цель 1: Задайте блоку с классом block-relative свойство top со значением 10px.
+Цель 2: Затем измените значение свойства на -10px.
+
+
+
+
+
+
+
+
+
+
+position:relative и left [4/20]
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Свойство left</title>
+    </head>
+    <body>
+        <div class="block">Блок 1</div>
+        <div class="block-shadow">
+            <div class="block-relative">Блок 2</div>
+        </div>
+        <div class="block">Блок 3</div>
+    </body>
+</html>
+
+
+
+body {
+    padding:20px;
+}
+
+.block {
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    background: #3A78A1;
+}
+
+.block-relative {
+    position:relative;
+    top:10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    background: #3A78A1;
+    left: 10px;
+    left: -10px;
+    height: 100px;
+}
+
+.block-shadow {
+    background: #ccc;
+}
+
+
+
+Задайте блоку с классом block-relative:
+
+Цель 1: свойство left со значением10px,
+Цель 2: затем измените значение на -10px,
+Цель 3: затем задайте блоку высоту 100px.
+
+
+
+
+
+
+
+
+
+
+position:relative и bottom [5/20]
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Свойство bottom</title>
+    </head>
+    <body>
+        <div class="block">Блок 1</div>
+        <div class="block-shadow">
+            <div class="block-relative">Блок 2</div>
+        </div>
+        <div class="block">Блок 3</div>
+    </body>
+</html>
+
+
+
+body {
+    padding:20px;
+}
+
+.block {
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    background: #3A78A1;
+}
+
+.block-relative {
+    position:relative;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    background: #3A78A1;
+    bottom: 10px;
+    bottom: -10px;
+}
+
+.block-shadow {
+    background: #ccc;
+}
+
+
+
+Цель 1: Задайте блоку с классом block-relative свойство bottom со значением 10px.
+Цель 2: Затем измените значение свойства на -10px.
+
+
+
+
+
+
+
+
+position:relative и right [6/20]
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Свойство right</title>
+    </head>
+    <body>
+        <div class="block">Блок 1</div>
+        <div class="block-shadow">
+            <div class="block-relative">Блок 2</div>
+        </div>
+        <div class="block">Блок 3</div>
+    </body>
+</html>
+
+
+body {
+    padding:20px;
+}
+
+.block {
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    background: #3A78A1;
+}
+
+.block-relative {
+    position:relative;
+    bottom:10px;
+    padding: 10px;
+    color: white;
+    background: #3A78A1;
+    right: 10px;
+    right: -10px;
+    margin-bottom: 40px;
+}
+
+.block-shadow {
+    background: #ccc;
+}
+
+
+
+Задайте блоку с классом block-relative:
+
+Цель 1: свойство right со значением 10px,
+Цель 2: затем измените значение на -10px,
+Цель 3: затем увеличьте отступ снизу (margin) до 40px.
+
+
+
+
+
+
+
+
+
+Относительное позиционирование на практике [7/20]
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Относительное позиционирование на практике</title>
+    </head>
+    <body>
+        <div class="frame">
+            <img width="150" src="/assets/course10/morozov.jpg" alt="">
+        </div>
+        <div class="frame">
+            <img width="75" src="/assets/course10/efimova.jpg" alt="">
+        </div>
+    </body>
+</html>
+
+
+.frame {
+    display: inline-block;
+    margin: 10px;
+    border-radius: 6px;
+    background-color: #27AE60;
+}
+
+.frame img {
+    display: block;
+    border-radius: 5px;
+    position: relative;
+    top: -5px;
+    left: -5px;
+}
+
+
+
+Задайте для изображений следующие CSS-свойства:
+
+Цель 1: относительное позиционирование,
+Цель 2: координату сверху -5px,
+Цель 3: координату слева -5px.
+
+
+
+
+
+
+
+
+Абсолютное позиционирование [8/20]
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Абсолютное позиционирование</title>
+    </head>
+    <body>
+        <div class="block">Блок 1</div>
+        <div class="block-absolute">Блок 2</div>
+        <div class="block">Блок 3</div>
+    </body>
+</html>
+
+
+body {
+    padding: 20px;
+}
+
+.block {
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background: #3A78A1;
+}
+
+.block-absolute {
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    background: rgba(255, 0, 0, 0.5);
+    position: absolute;
+}
+
+
+
+
+Цель 1: Задайте блоку с классом block-absolute абсолютное позиционирование.
+
+
+
+
+
+
+
+
+
+
+
+
+Абсолютное позиционирование и строчные элементы [9/20]
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Абсолютное позиционирование и строчные элементы</title>
+    </head>
+    <body>
+        <div class="block">Блок 1</div>
+        <span class="inline-absolute">Строчный элемент</span>
+        <div class="block">Блок 3</div>
+    </body>
+</html>
+
+
+
+body {
+    padding: 20px;
+}
+
+.block {
+    margin-bottom :20px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background: #3A78A1;
+}
+
+.inline-absolute {
+    color: white;
+    background: rgba(255, 0, 0, 0.5);
+    position: absolute;
+    width: 200px;
+    height: 100px;
+}
+
+
+
+Задайте элементу с классом inline-absolute:
+
+Цель 1: абсолютное позиционирование,
+Цель 2: ширину 200px,
+Цель 3: высоту 100px.
+
+
+
+
+
+
+
+position:absolute и left [10/20]
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>position:absolute и left</title>
+    </head>
+    <body>
+        <div class="block">Блок 1</div>
+        <div class="block-absolute">Блок 2</div>
+        <div class="block">Блок 3</div>
+    </body>
+</html>
+
+
+body {
+    padding: 20px;
+}
+
+.block {
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background: #3A78A1;
+}
+
+.block-absolute {
+    position: absolute;
+    width: 100px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    background: rgba(255, 0, 0, 0.5);
+    left: 10px;
+    left: -50px;
+}
+
+
+Задайте блоку с классом block-absolute свойство left:
+
+Цель 1: со значением 10px,
+Цель 2: затем измените значение на -50px.
+
+
+
+
+
+
+
+position:absolute и top [11/20]
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>position:absolute и top</title>
+    </head>
+    <body>
+        <div class="block">Блок 1</div>
+        <div class="block-absolute">Блок 2</div>
+        <div class="block">Блок 3</div>
+    </body>
+</html>
+
+
+body {
+    padding: 20px;
+}
+
+.block {
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background: #3A78A1;
+}
+
+.block-absolute {
+    position: absolute;
+    left: 10px;
+    width: 100px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    background: rgba(255, 0, 0, 0.5);
+    top: 10px;
+    top: -20px;
+}
+
+
+Задайте блоку с классом block-absolute свойство top:
+
+Цель 1: со значением 10px,
+Цель 2: затем измените значение на -20px.
+
+
+
+
+
+
+
+position:absolute и right [12/20]
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>position:absolute и right</title>
+    </head>
+    <body>
+        <div class="block">Блок 1</div>
+        <div class="block-absolute">Блок 2</div>
+        <div class="block">Блок 3</div>
+    </body>
+</html>
+
+
+body {
+    padding: 20px;
+}
+
+.block {
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background: #3A78A1;
+}
+
+.block-absolute {
+    position: absolute;
+    width: 100px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    background: rgba(255, 0, 0, 0.5);
+    right: 10px;
+    right: -50px;
+}
+
+
+
+Задайте блоку с классом block-absolute свойство right:
+
+Цель 1: со значением 10px,
+Цель 2: затем измените значение на -50px.
+
+
+
+
+
+
+
+
+
+position:absolute и bottom [13/20]
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>position:absolute и bottom</title>
+    </head>
+    <body>
+        <div class="block">Блок 1</div>
+        <div class="block-absolute">Блок 2</div>
+        <div class="block">Блок 3</div>
+    </body>
+</html>
+
+
+body {
+    padding: 20px;
+}
+
+.block {
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background: #3A78A1;
+}
+
+.block-absolute {
+    position: absolute;
+    right: 10px;
+    width: 100px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    background: rgba(255, 0, 0, 0.5);
+    bottom: 10px;
+    bottom: -50px;
+}
+
+
+Задайте блоку с классом block-absolute свойство bottom:
+
+Цель 1: со значением 10px,
+Цель 2: затем измените значение на -50px.
+
+
+
+
+
+
+
+
+
+Точка отсчета координат [14/20]
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Точка отсчета координат</title>
+    </head>
+    <body>
+        <div class="block-1">
+            Блок 1
+            <div class="block-2">
+                Блок 2
+                <div class="block-absolute">
+                    position: absolute;<br>
+                    right: 10px;<br>
+                    top: 10px;
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+body {
+    margin: 10px;
+    padding: 20px;
+    color: white;
+    border: 1px dotted #999;
+    position: relative;
+}
+
+.block-1 {
+    min-height: 100px;
+    padding: 10px;
+    background: #3A78A1;
+    position: relative;
+}
+
+.block-2 {
+    min-height: 100px;
+    padding: 10px;
+    background: #27AE60;
+    position: relative;
+}
+
+.block-absolute {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+    background: #E74C3C;
+    opacity: 0.8;
+}
+
+
+
+Последовательно задайте относительное позиционирование следующим элементам:
+
+Цель 1: элементу body,
+Цель 2: элементу с классом block-1,
+Цель 3: элементу с классом block-2.
+
+
+
+
+
+
+
+
+
+
+Тренируемся задавать координаты [15/20]
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Тренируемся задавать координаты</title>
+    </head>
+    <body>
+        <div class="block block-1">
+            <div class="block-absolute"></div>
+        </div>
+        <div class="block block-2">
+            <div class="block-absolute"></div>
+        </div>
+    </body>
+</html>
+
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.block {
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    background: #3A78A1;
+}
+
+.block-1 {
+    width: 150px;
+    height: 200px;
+}
+
+.block-absolute {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #E74C3C;
+    /*left: 0px;
+    top: 0px;*/
+    /*right: 0px;
+    top: 0px;*/
+    /*left: 0px;
+    bottom: 0px;*/
+    right: 0px;
+    bottom: 0px;
+}
+
+
+Поочередно расположите абсолютно спозиционированный блок block-absolute в каждом из четырех углов. Оступы от краев угла должны быть нулевыми.
+
+Цель 1: Левый верхний угол.
+Цель 2: Правый верхний угол.
+Цель 3: Левый нижний угол.
+Цель 4: Правый нижний угол.
+
+
+
+
+
+
+
+
+
+Неявная точка отсчета [16/20]
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Неявная точка отсчета</title>
+    </head>
+    <body>
+        <div class="block">Что будет, если какому-нибудь элементу задать абсолютное позиционирование, <span class="inline-absolute">но при этом</span> не задавать никаких свойств, влияющих на его расположение (например, left)?</div>
+        
+        <div class="block">Такой элемент выпадет из <span class="inline-absolute">потока</span>, но останется на том месте, где был расположен до <span class="inline-absolute">этого.</span></div>
+    </body>
+</html>
+
+
+body {
+    padding: 10px;
+}
+
+.block {
+    margin: 10px;
+    padding: 20px;
+    color: white;
+    background: #3A78A1;
+}
+
+.inline-absolute {
+    background: #E74C3C;
+    opacity: 0.8;
+    position: absolute;
+    margin-top: -15px;
+    margin-left: 15px;
+}
+
+
+
+Задайте элементам с классом inline-absolute:
+
+Цель 1: абсолютное позиционирование,
+Цель 2: отступ сверху (margin) -15px,
+Цель 3: отступ слева (margin) 15px.
+
+
+
+
+
+
+
+
+Абсолютное позиционирование на практике [17/20]
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Абсолютное позиционирование на практике</title>
+    </head>
+    <body>
+        <div class="achievment">
+            <div class="badge"></div>
+            <div class="title">Первое задание</div>
+            <div class="description">Выполнить первое задание в курсе</div>
+        </div>
+        <div class="achievment">
+            <div class="badge"></div>
+            <div class="title">Первое испытание</div>
+            <div class="description">Пройти первое испытание</div>
+        </div>
+    </body>
+</html>
+
+
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.achievment {
+    position: relative;
+    width: 200px;
+    min-height: 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding-left: 70px;
+}
+
+.badge {
+    width: 44px;
+    height: 44px;
+    border: 3px solid #e5e5e5;
+    border-radius: 4px;
+    background-color: #7fc3e5;
+    background-image: url('/assets/course10/medal.png');
+    position: absolute;
+    left: 10px;
+}
+
+.title {
+    margin-bottom: 3px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 12px;
+    color: #666;
+}
+
+
+
+Цель 1: Задайте элементу с классом achievment внутренний отступ слева 70px.
+Цель 2: Задайте элементу с классом badge абсолютное позиционирование
+Цель 3: и координату слева 10px.
+
+
+
+
+
+
+
+
+
+Фиксированное позиционирование [18/20]
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Фиксированное позиционирование</title>
+    </head>
+    <body>
+        <div class="block">Блок 1</div>
+        <div class="block">Блок 2</div>
+        <div class="block">Блок 3</div>
+        <div class="block-fixed">Блок 4. Прокручивайте страницу и убедитесь, что блок не перемещается.</div>
+        <div class="block">Блок 5</div>
+    </body>
+</html>
+
+
+
+body {
+    padding: 20px;
+}
+
+.block {
+    min-height: 200px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    background: #3A78A1;
+}
+
+.block-fixed {
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    background: rgba(255, 0, 0, 0.5);
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}Задайте блоку с классом block-fixed:
+
+Цель 1: фиксированное позиционирование,
+Цель 2: координату слева 10px,
+Цель 3: и координату сверху 10px.
+
+
+
+
+
+
+
+z-index или кто кого перекроет [19/20]
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>z-index или кто кого перекроет</title>
+    </head>
+    <body>
+        <div class="block block-1">Блок 1</div>
+        <div class="block block-2">Блок 2</div>
+        <div class="block block-3">Блок 3</div>
+    </body>
+</html>
+
+
+body {
+    margin: 0;
+    padding: 20px;
+}
+
+.block {
+    padding: 10px;
+    color: white;
+    text-align: right;
+    opacity: 0.8;
+}
+
+.block-1 {
+    width: 350px;
+    height: 350px;
+    background: #3A78A1;
+    position: relative;
+    z-index: 200;
+}
+
+.block-2 {
+    position: absolute;
+    top: 20px;
+    width: 250px;
+    height: 250px;
+    background: #E74C3C;
+    z-index: 100;
+}
+
+.block-3 {
+    position: absolute;
+    top: 20px;
+    width: 150px;
+    height: 150px;
+    background: #27AE60;
+}
+
+
+Цель 1: Задайте блоку 2 z-index со значением 100.
+Цель 2: Задайте блоку 1 относительное позиционирование
+Цель 3: и z-index со значением 200.
+
+
+
+
+
+
+
+Испытание: собери слово «вечность» [20/20]
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Испытание: собери слово «вечность»</title>
+        <link rel="stylesheet" href="/assets/course10/style1.css">
+    </head>
+    <body>
+        <div class="scene">
+            <div class="h h1"></div>
+            <div class="h h2"></div>
+            <div class="h h3"></div>
+            <div class="v v1"></div>
+            <div class="v v2"></div>
+            <div class="v v3"></div>
+            <div class="v v4"></div>
+            <div class="v v5"></div>
+            <div class="v v6"></div>
+            <div class="corner-top"></div>
+            <div class="corner-bottom"></div>
+            <div class="logo"></div>
+        </div>
+    </body>
+</html>
+
+
+html {
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+}
+
+.scene {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    background: none;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+div {
+    display: inline-block;
+    background: white;
+}
+
+/* горизонтальные элементы */
+.h {
+    width: 50px;
+    height: 10px;
+    position:absolute
+}
+
+.h3 {
+    width: 40px;
+}
+
+/* вертикальные элементы */
+.v {
+    width: 10px;
+    height: 50px;
+    position:absolute
+}
+.v1{
+    left:20px;top:170px
+}
+.v2{
+    left:60px;top:170px
+}
+.v3{
+    left:100px;top:170px
+}
+.v4{
+    left:140px;top:170px
+}
+.v5{
+    left:180px;top:170px
+}
+.v6{
+    left:200px;top:170px
+}
+.h1{
+    left:20px;top:190px
+}
+.h2{
+    left:80px;top:170px
+}
+.h3{
+    left:200px;top:210px
+}
+.corner-top{
+    left:150px;top:170px;position:absolute
+}
+.corner-bottom{
+    left:150px;top:190px;position:absolute
+}
+
+/* уголки */
+    .corner-top {
+    border: 15px solid white;
+    border-top-width: 20px;
+    border-bottom-width: 0;
+    border-top-color: transparent;
+    background: none;
+}
+
+.corner-bottom {
+    border: 15px solid transparent;
+    border-top-width: 20px;
+    border-bottom-width: 0;
+    border-top-color: white;
+    background: none;
+}
+
+/* лого */
+.logo {
+    width: 64px;
+    height: 64px;
+    background: url('/assets/course10/logo.png');
+    position:absolute;
+    top:80px;
+    left:87px
+}
+
+
+Повторить
+
+
+
+
+

@@ -1,0 +1,35 @@
+.shooter-1 li:nth-child(-n+2) {
+    background-color:white;
+}
+
+.shooter-1 .third {
+    background-color:white;
+}
+
+.shooter-1 .third + li {
+    background-color:red;
+}
+
+.shooter-1 .third + li + li {
+    background-color:white;
+}
+
+.shooter-2 .first {
+    background-color:white;
+}
+
+.shooter-2 .first + li {
+    background-color:red;
+}
+
+.shooter-2 .third {
+    background-color:white;
+}
+
+.shooter-2 .third + li {
+    background-color:yellow;
+}
+
+.shooter-2 .third + li + li {
+    background-color:white;
+}

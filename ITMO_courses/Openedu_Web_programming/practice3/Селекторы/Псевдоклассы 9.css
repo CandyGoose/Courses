@@ -1,0 +1,19 @@
+li:first-child {
+    background-color:red;
+}
+
+li:first-child + li {
+    background-color:white;
+}
+
+li:first-child + li + li {
+    background-color:white;
+}
+
+li:first-child + li + li + li{
+    background-color:white;
+}
+
+li:last-child {
+    background-color:yellow;
+}

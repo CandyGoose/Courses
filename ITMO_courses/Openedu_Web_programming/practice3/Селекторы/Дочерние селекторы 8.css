@@ -1,0 +1,7 @@
+.places > li {
+    border-bottom: 2px solid #ccc;
+}
+
+.places > li > span {
+    font-weight: bold;
+}

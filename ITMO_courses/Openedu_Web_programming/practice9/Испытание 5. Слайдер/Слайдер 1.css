@@ -1,0 +1,69 @@
+html,body{
+    margin:0;
+    padding:0;
+}
+body{
+    width:500px;
+    height:300px;
+    font-size:16px;
+    font-family:"Tahoma", sans-serif;
+    line-height:20px;
+    color:black;
+    background:#eeeeee;
+}
+.wrapper {
+    padding:40px 20px 0;
+    background:url(/assets/ifmo/slide-bg.png) no-repeat 280px 50%;
+    height:300px;
+    box-sizing:border-box;
+}
+.wrapper .slide {
+    max-width:260px;
+}
+h1 {
+    font-size:25px;
+    line-height:25px;
+    margin:0;
+}
+.button {
+    display:block;
+    text-align:center;
+    margin-top:25px;
+    height:40px;
+    line-height:40px;
+    width:200px;
+    font-size:15px;
+    text-transform:uppercase;
+    color:#fff;
+    background:#fb565a;
+    border-radius: 5px;
+}
+.navigation {
+    width:75px;
+    margin:29px 205px 0 ;
+}
+.navigation:after{
+    content:'';
+    clear:both;
+    display:table;
+}
+.navigation a {
+    width:15px;
+    height:15px;
+    background:#666;
+    float:left;
+    border-radius:50%;
+    position:relative;
+    margin-right:10px;
+    padding:0;
+}
+.navigation a.active:after {
+    content:'';
+    position:absolute;
+    top:5px;
+    left:5px;
+    width:5px;
+    height:5px;
+    border-radius:inherit;
+    background:#fff;
+}

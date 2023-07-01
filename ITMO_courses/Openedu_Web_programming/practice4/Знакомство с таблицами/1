@@ -1,0 +1,1434 @@
+
+
+
+Простейшая таблица [1/23]
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Простейшая таблица</title>
+    </head>
+    <body>
+        <h1>Распределение браузеров</h1>
+ 
+        <table border="1">
+            <tr>
+                <td>Браузер</td>
+                <td>Посещения</td>
+            </tr>
+            <tr>
+                <td>Mozilla Firefox</td>
+                <td>163</td>
+            </tr>
+            <tr>
+                <td>Google Chrome</td>
+                <td>78</td>
+            </tr>
+            <tr>
+                <td>Safari</td>
+                <td>35</td>
+            </tr>
+        </table>
+ 
+    </body>
+</html>
+
+
+Цель 1: Уберите комментарий в коде HTML-редактора.
+
+
+
+
+
+Добавляем строки [2/23]
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Добавляем строки</title>
+    </head>
+    <body>
+        <h1>Распределение браузеров</h1>
+
+        <table border="1">
+            <tr>
+                <td>Браузер</td>
+                <td>Посещения</td>
+            </tr>
+            <tr>
+                <td>Mozilla Firefox</td>
+                <td>163</td>
+            </tr>
+            <tr>
+                <td>Google Chrome</td>
+                <td>78</td>
+            </tr>
+            <tr>
+                <td>Safari</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>Opera</td>
+                <td>78</td>
+            </tr>
+            <tr>
+                <td>Internet Explorer</td>
+                <td>35</td>
+            </tr>
+        </table>
+
+    </body>
+</html>
+
+
+
+Цель 1: Добавьте в таблицу пятую строку со статистикой для браузера Opera,
+Цель 2: шестую строку со статистикой для браузера Internet Explorer.
+Количество посещений можете указать любое.
+
+
+
+
+
+
+
+Добавляем столбцы [3/23]
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Добавляем столбцы</title>
+    </head>
+    <body>
+        <h1>Распределение браузеров</h1>
+
+        <table border="1">
+            <tr>
+                <td>Браузер</td>
+                <td>Посещения</td>
+                <td>Операционная система</td>
+                <td>Посещаемость в процентах</td>
+            </tr>
+            <tr>
+                <td>Mozilla Firefox</td>
+                <td>163</td>
+                <td>Mozilla Firefox</td>
+                <td>163</td>
+            </tr>
+            <tr>
+                <td>Google Chrome</td>
+                <td>78</td>
+                <td>Mozilla Firefox</td>
+                <td>163</td>
+            </tr>
+            <tr>
+                <td>Safari</td>
+                <td>35</td>
+                <td>Mozilla Firefox</td>
+                <td>163</td>
+            </tr>
+        </table>
+
+    </body>
+</html>
+
+
+
+
+Цель 1: Добавьте в таблицу третий столбец Операционная система
+Цель 2: и четвёртый столбец Посещаемость в процентах.
+Значения в первой строке каждого столбца должны быть как в задании, значения в остальных ячейках можете указать любые.
+
+
+
+
+
+
+
+
+Задаём рамки с помощью CSS [4/23]
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Задаём рамки с помощью CSS</title>
+    </head>
+    <body>
+        <h1>Распределение браузеров</h1>
+
+        <table>
+            <!--<table border="5">-->
+            <tr>
+                <td>Браузер</td>
+                <td>Посещения</td>
+            </tr>
+            <tr>
+                <td>Mozilla Firefox</td>
+                <td>163</td>
+            </tr>
+            <tr>
+                <td>Google Chrome</td>
+                <td>78</td>
+            </tr>
+            <tr>
+                <td>Safari</td>
+                <td>35</td>
+            </tr>
+        </table>
+
+    </body>
+</html>
+
+
+
+
+table {
+    border: 5px solid black;
+}
+
+
+td {
+    border: 5px solid lightgray;
+}
+
+
+
+Цель 1: Измените значение атрибута border на 5 в HTML-редакторе.
+Цель 2: Затем удалите этот атрибут.
+Цель 3: В CSS-редакторе раскомментируйте стили для таблицы,
+Цель 4: затем раскомментируйте стили для ячейки.
+Комментарии в CSS — это /* и */, удаляйте обе строчки.
+
+
+
+
+
+
+
+
+Улучшаем отображение рамок [5/23]
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Улучшаем отображение рамок</title>
+    </head>
+    <body>
+        <h1>Распределение браузеров</h1>
+
+        <table>
+            <tr>
+                <td>Браузер</td>
+                <td>Посещения</td>
+            </tr>
+            <tr>
+                <td>Mozilla Firefox</td>
+                <td>163</td>
+            </tr>
+            <tr>
+                <td>Google Chrome</td>
+                <td>78</td>
+            </tr>
+            <tr>
+                <td>Safari</td>
+                <td>35</td>
+            </tr>
+        </table>
+
+    </body>
+</html>
+
+
+table {
+    border: 6px solid black;
+    border-collapse: collapse
+}
+
+td {
+    border: 3px solid lightgray;
+}
+
+
+
+Цель 1: В CSS-редакторе задайте для таблицы свойство border-collapse: collapse, чтобы рамки ячеек схлопнулись.
+Цель 2: Затем в CSS-редакторе увеличьте ширину рамки таблицы до 6px.
+
+
+
+
+
+
+Горизонтальные и вертикальные рамки [6/23]
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Горизонтальные и вертикальные рамки</title>
+    </head>
+    <body>
+        <h1>Распределение браузеров</h1>
+
+        <table>
+            <tr>
+                <td>Браузер</td>
+                <td>Посещения</td>
+                <td>Доля</td>
+            </tr>
+            <tr>
+                <td>Mozilla Firefox</td>
+                <td>163</td>
+                <td>59%</td>
+            </tr>
+            <tr>
+                <td>Google Chrome</td>
+                <td>78</td>
+                <td>28%</td>
+            </tr>
+            <tr>
+                <td>Safari</td>
+                <td>35</td>
+                <td>13%</td>
+            </tr>
+        </table>
+
+    </body>
+</html>
+
+
+table {
+    border-collapse: collapse;
+    border: 3px solid black;
+}
+
+td {
+    /*border: 2px solid lightgray;*/
+    border-bottom: 2px solid lightgray;
+    border-left: 2px solid lightgray;
+}
+
+
+
+Цель 1: В CSS у ячейки удалите свойство border,
+Цель 2: затем раскомментируйте свойство border-bottom,
+Цель 3: затем удалите border-bottom и раскомментируйте border-left.
+
+
+
+
+
+
+
+Отступы внутри ячеек [7/23]
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Отступы внутри ячеек</title>
+    </head>
+    <body>
+        <h1>Распределение браузеров</h1>
+
+        <table>
+        <!--<table cellpadding="5">-->
+            <tr>
+                <td>Браузер</td>
+                <td>Посещения</td>
+                <td>Доля</td>
+            </tr>
+            <tr>
+                <td>Mozilla Firefox</td>
+                <td>163</td>
+                <td>59%</td>
+            </tr>
+            <tr>
+                <td>Google Chrome</td>
+                <td>78</td>
+                <td>28%</td>
+            </tr>
+            <tr>
+                <td>Safari</td>
+                <td>35</td>
+                <td>13%</td>
+            </tr>
+        </table>
+
+    </body>
+</html>
+
+
+table {
+    border-collapse: collapse;
+    border: 3px solid black;
+}
+
+td {
+    border: 2px solid lightgray;
+    padding: 5px;
+    padding-right: 30px;
+}
+
+
+Цель 1: Сначала в HTML-редакторе измените значение атрибута cellpadding на 5.
+Цель 2: Затем удалите этот атрибут.
+Цель 3: В CSS-редакторе для td добавьте свойство padding: 5px;.
+Цель 4: А ниже него добавьте свойство padding-right: 30px;.
+
+
+
+
+
+
+Отступы между ячейками [8/23]
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Отступы между ячейками</title>
+    </head>
+    <body>
+        <h1>Распределение браузеров</h1>
+
+        <table>
+        <!--<table cellspacing="5">-->
+            <tr>
+                <td>Браузер</td>
+                <td>Посещения</td>
+                <td>Доля</td>
+            </tr>
+            <tr>
+                <td>Mozilla Firefox</td>
+                <td>163</td>
+                <td>59%</td>
+            </tr>
+            <tr>
+                <td>Google Chrome</td>
+                <td>78</td>
+                <td>28%</td>
+            </tr>
+            <tr>
+                <td>Safari</td>
+                <td>35</td>
+                <td>13%</td>
+            </tr>
+        </table>
+
+    </body>
+</html>
+
+
+table {
+    border-collapse: separate;
+    border: 3px solid black;
+    border-spacing: 5px;
+}
+
+td {
+    border: 2px solid lightgray;
+    padding: 5px;
+}
+
+
+Цель 1: В HTML-редакторе измените значение атрибута cellspacing на 5.
+Цель 2: Затем удалите этот атрибут.
+Цель 3: В CSS-редакторе для table добавьте свойство border-spacing: 5px;.
+
+
+
+
+
+
+Испытание: простая, но аккуратная таблица [9/23]
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Простая, но аккуратная таблица</title>
+    </head>
+    <body>
+        <h1>Посещения по городам</h1>
+        <table>
+            <tr>
+                <td>Город</td>
+                <td>Посещения</td>
+                <td>Страниц</td>
+                <td>Время</td>
+            </tr>
+            <tr>
+                <td>СПб</td>
+                <td>199</td>
+                <td>18,02</td>
+                <td>00:13:45</td>
+            </tr>
+            <tr>
+                <td>Москва</td>
+                <td>69</td>
+                <td>1,48</td>
+                <td>00:00:44</td>
+            </tr>
+            <tr>
+                <td>Киев</td>
+                <td>5</td>
+                <td>13,43</td>
+                <td>00:18:07</td>
+            </tr>            
+        </table>
+    </body>
+</html>
+
+
+body {
+    width: 350px;
+    margin: 0;
+    padding: 0 10px;
+    font-size: 14px;
+    font-family: Arial;
+}
+
+table {
+    border-collapse:collapse
+}
+
+td {
+    border-bottom: 2px solid lightgray;
+    padding: 10px;
+}
+
+
+Повторить 
+
+
+
+
+
+Ячейки-заголовки [10/23]
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ячейки-заголовки</title>
+    </head>
+    <body>
+        <h1>Распределение браузеров</h1>
+
+        <table>
+            <tr>
+                <th>Браузер</th>
+                <th>Посещения</th>
+                <th>Доля</th>
+            </tr>
+            <tr>
+                <td>Mozilla Firefox</td>
+                <td>163</td>
+                <td>59%</td>
+            </tr>
+            <tr>
+                <td>Google Chrome</td>
+                <td>78</td>
+                <td>28%</td>
+            </tr>
+            <tr>
+                <td>Safari</td>
+                <td>35</td>
+                <td>13%</td>
+            </tr>
+        </table>
+
+    </body>
+</html>
+
+
+table {
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+td {
+    padding: 5px;
+    padding-right: 30px;
+    border: 1px solid lightgray;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+
+
+Цель 1: Замените <td> на <th> в первой строке таблицы.
+Цель 2: В CSS-редакторе для th добавьте свойство padding: 10px;.
+Цель 3: Для него же добавьте свойство border: 1px solid black;.
+
+
+
+
+
+
+
+Заголовок таблицы [11/23]
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Заголовок таблицы</title>
+    </head>
+    <body>
+        <h1>Распределение браузеров</h1>
+
+        <table>
+            <caption>Распределение браузеров</caption>
+            <tr>
+                <td>Браузер</td>
+                <td>Посещения</td>
+                <td>Доля</td>
+            </tr>
+            <tr>
+                <td>Mozilla Firefox</td>
+                <td>163</td>
+                <td>59%</td>
+            </tr>
+            <tr>
+                <td>Google Chrome</td>
+                <td>78</td>
+                <td>28%</td>
+            </tr>
+            <tr>
+                <td>Safari</td>
+                <td>35</td>
+                <td>13%</td>
+            </tr>
+        </table>
+
+    </body>
+</html>
+
+
+table {
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+td {
+    padding: 5px;
+    padding-right: 30px;
+    border: 1px solid lightgray;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+caption {
+    caption-side: bottom;
+    text-align: right;
+    /*text-align: left;*/
+}
+
+Цель 1: Создайте заголовок таблицы Распределение браузеров с помощью тега <caption>.
+Цель 2: В CSS-редакторе для caption добавьте свойство caption-side: bottom;,
+Цель 3: затем для него же добавьте свойство text-align: right;.
+Цель 4: Измените text-align: right; на text-align: left;.
+
+
+
+
+
+Объединяем ячейки в строках [12/23]
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Объединяем ячейки в строках</title>
+    </head>
+    <body>
+        <table>
+            <caption>Распределение браузеров</caption>
+            <tr>
+                <th>Браузер</th>
+                <th colspan="2">Посещения</th>
+                <!--<th class="pink"></th>-->
+            </tr>
+            <tr>
+                <th></th>
+                <th>Количество</th>
+                <th>В процентах</th>
+            </tr>
+            <tr>
+                <td>Mozilla Firefox</td>
+                <td>163</td>
+                <td>59%</td>
+            </tr>
+            <tr>
+                <td>Google Chrome</td>
+                <td>78</td>
+                <td>28%</td>
+            </tr>
+            <tr>
+                <td>Safari</td>
+                <td>35</td>
+                <td>13%</td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+
+Цель 1: Добавьте ячейке с надписью Посещения атрибут colspan="2". Обратите внимание, что в таблице добавился лишний столбец.
+Цель 2: Затем удалите пустую ячейку с розовым фоном сразу после ячейки Посещения. Лишний столбец должен исчезнуть.
+
+
+
+
+
+
+Объединяем ячейки в столбцах [13/23]
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Объединяем ячейки в столбцах</title>
+    </head>
+    <body>
+        <table>
+            <caption>Распределение браузеров</caption>
+            <tr>
+                <th rowspan="2">Браузер</th>
+                <th colspan="2">Посещения</th>
+            </tr>
+            <tr>
+                <!--<th class="pink"></th>-->
+                <th>Количество</th>
+                <th>В процентах</th>
+            </tr>
+            <tr>
+                <td>Mozilla Firefox</td>
+                <td>163</td>
+                <td>59%</td>
+            </tr>
+            <tr>
+                <td>Google Chrome</td>
+                <td>78</td>
+                <td>28%</td>
+            </tr>
+            <tr>
+                <td>Safari</td>
+                <td>35</td>
+                <td>13%</td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+
+
+table {
+    border-collapse: collapse;
+    border: 2px solid black;
+    border-spacing: 4px;
+}
+
+td {
+    padding: 5px;
+    padding-right: 30px;
+    border: 1px solid lightgray;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+caption {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.pink {
+    background-color: pink;
+}
+
+
+
+Цель 1: Добавьте ячейке с надписью Браузер атрибут rowspan="2". Смотрите, как сместилась ячейка снизу.
+Цель 2: Удалите ячейку c классом pink и розовым фоном во второй строке.
+Цель 3: Измените значение свойства border-collapse с separate на collapse.
+
+
+
+
+
+
+
+Закрепление colspan [14/23]
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Закрепление colspan</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>1.1</td>
+                <td colspan="2">1.2</td>
+                <td>1.4</td>
+            </tr>
+            <tr>
+                <td>2.1</td>
+                <td colspan="3">2.2</td>
+            </tr>
+            <tr>
+                <td colspan="4">3.1</td>
+            </tr>
+            <tr>
+                <td>4.1</td>
+                <td>4.2</td>
+                <td>4.3</td>
+                <td>4.4</td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+
+Цель 1: Добавьте ячейке 1.2 атрибут colspan="2". Удалите ячейку с классом pink в первой строке.
+Цель 2: Ячейке 2.2 атрибут colspan="3", удалите ячейки с классом pink во второй строке.
+Цель 3: Ячейке 3.1 атрибут colspan="4", удалите ячейки с классом pink в третьей строке.
+
+
+
+
+
+
+
+Закрепление rowspan [15/23]
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Закрепление rowspan</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td rowspan="4">1.1</td>
+                <td>1.2</td>
+                <td rowspan="3">1.3</td>
+                <td>1.4</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2.2</td>
+                <td>2.4</td>
+            </tr>
+            <tr>
+                <td>3.4</td>
+            </tr>
+            <tr>
+                <td>4.2</td>
+                <td>4.3</td>
+                <td>4.4</td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+
+Цель 1: Добавьте ячейке 1.1 атрибут rowspan="4", удалите ячейки с классом pink (розовые).
+Цель 2: Ячейке 2.2 атрибут rowspan="2", удалите ячейку с классом green (зелёную).
+Цель 3: Ячейке 1.3 атрибут rowspan="3", удалите ячейки с классом blue (синие).
+
+
+
+
+
+
+
+Комбо: colspan + rowspan [16/23]
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Комбо: colspan + rowspan</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td colspan="2" rowspan="2">1.1</td>
+                <td>1.3</td>
+            </tr>
+            <tr>
+                <td>2.3</td>
+            </tr>
+            <tr>
+                <td>3.1</td>
+                <td>3.2</td>
+                <td>3.3</td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+
+
+Цель 1: Добавьте ячейке 1.1 атрибуты colspan="2" и rowspan="2".
+Цель 2: Удалите ячейки с классом pink (розовые).
+
+
+
+
+
+
+Испытание: таблица посложнее [17/23]
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Таблица посложнее</title>
+    </head>
+    <body>
+        <table>
+            <caption>Посещения по городам</caption>
+            <tr>
+                <th>Город</th>
+                <th>Посещения</th>
+                <th>Страниц</th>
+                <th>Время</th>
+            </tr>
+            <tr>
+                <td>СПб</td>
+                <td>199</td>
+                <td>18,02</td>
+                <td>00:13:45</td>
+            </tr>
+            <tr>
+                <td>Москва</td>
+                <td>69</td>
+                <td rowspan="2">нет данных</td>
+                <td>00:00:44</td>
+            </tr>
+            <tr>
+                <td>Киев</td>
+                <td>5</td>
+                <td>00:18:07</td>
+            </tr>       
+            <tr>
+                <td colspan="3">Всего посещений </td>
+                <td>273</td>
+            </tr>   
+        </table>
+    </body>
+</html>
+
+
+
+
+body{
+    width: 350px;
+    margin: 0;
+    padding: 0 10px;
+    font-size: 14px;
+    font-family: Arial;
+}
+caption{
+    border-collapse:collapse;
+    caption-side:bottom;
+    text-align:center;
+}
+table{
+    border-collapse:collapse;
+}
+th{ 
+    border-collapse:collapse;
+    padding:10px;
+    border-collapse:collapse;
+    border-bottom:2px solid black;
+}
+td{
+    border-collapse:collapse;
+    padding:10px;
+    border:1px solid lightgray;   
+}
+
+
+
+Повторить
+
+
+
+
+
+
+
+
+Выравнивание содержимого в ячейках [18/23]
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Выравнивание содержимого в ячейках</title>
+    </head>
+    <body>
+        <table>
+            <caption>Распределение браузеров</caption>
+            <tr>
+                <th class="cell-1" rowspan="2">Браузер</th>
+                <th colspan="2">Посещения</th>
+            </tr>
+            <tr>
+                <th>Количество</th>
+                <th>В процентах</th>
+            </tr>
+            <tr>
+                <td>Mozilla Firefox</td>
+                <td class="column-2">1263</td>
+                <td class="column-3">75%</td>
+            </tr>
+            <tr>
+                <td>Google Chrome</td>
+                <td class="column-2">78</td>
+                <td class="column-3">5%</td>
+            </tr>
+            <tr>
+                <td>Safari</td>
+                <td class="column-2">345</td>
+                <td class="column-3">20%</td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+
+.cell-1 {
+    /*vertical-align: top;*/
+    vertical-align: bottom;
+}
+
+.column-2 {
+    text-align: right;
+}
+
+.column-3 {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+td {
+    padding: 5px;
+    padding-right: 10px;
+    border: 1px solid lightgray;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+caption {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+
+Цель 1: Для CSS-правила .cell-1 добавьте свойство vertical-align: top;.
+Цель 2: Затем поменяйте его на vertical-align: bottom;.
+Цель 3: Для .column-2 свойство text-align: right;.
+Цель 4: Для .column-3 свойство text-align: center;.
+
+
+
+
+
+
+
+
+Добавим цвета [19/23]
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Добавим цвета</title>
+    </head>
+    <body>
+        <table>
+            <caption>Распределение браузеров</caption>
+            <tr>
+                <th rowspan="2">Браузер</th>
+                <th colspan="2">Посещения</th>
+            </tr>
+            <tr>
+                <th>Количество</th>
+                <th>В процентах</th>
+            </tr>
+            <tr>
+                <td>Mozilla Firefox</td>
+                <td>126</td>
+                <td>59%</td>
+            </tr>
+            <tr>
+                <td>Google Chrome</td>
+                <td>78</td>
+                <td>30%</td>
+            </tr>
+            <tr>
+                <td>Safari</td>
+                <td>34</td>
+                <td>11%</td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+
+table {
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+td {
+    padding: 5px;
+    padding-right: 10px;
+    border: 1px solid lightgray;
+    color: brown;
+    background-color: lightyellow;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid black;
+    color: darkblue;
+    background-color: lightcyan;
+}
+
+caption {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+
+Цель 1: В CSS для td добавьте свойства color: brown; и background-color: lightyellow;.
+Цель 2: Для th добавьте свойства color: darkblue; и background-color: lightcyan;.
+
+
+
+
+Раскрашиваем строки [20/23]
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Раскрашиваем строки</title>
+    </head>
+    <body>
+        <table>
+            <caption>Распределение браузеров</caption>
+            <tr>
+                <th rowspan="2">Браузер</th>
+                <th colspan="2">Посещения</th>
+            </tr>
+            <tr>
+                <th>Количество</th>
+                <th>В процентах</th>
+            </tr>
+            <tr class="row-1">
+                <td>Mozilla Firefox</td>
+                <td>126</td>
+                <td>59%</td>
+            </tr>
+            <tr class="row-2">
+                <td>Google Chrome</td>
+                <td>78</td>
+                <td>28%</td>
+            </tr>
+            <tr class="row-3">
+                <td>Safari</td>
+                <td>34</td>
+                <td>13%</td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+
+.row-1 {
+    background-color: pink;
+}
+
+.row-2 {
+    background-color: lightgreen;
+}
+
+.row-3 {
+    background-color: lightblue;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+td {
+    padding: 5px;
+    padding-right: 10px;
+    border: 1px solid lightgray;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+caption {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+
+Цель 1: В CSS для .row-1 добавьте свойство background-color: pink;.
+Цель 2: Для .row-2 добавьте background-color: lightgreen;.
+Цель 3: Для .row-3 добавьте background-color: lightblue;.
+
+
+
+
+
+
+
+Задаём размеры таблицы [21/23]
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Задаём размеры таблицы</title>
+    </head>
+    <body>
+        <table>
+            <caption>Распределение браузеров</caption>
+            <tr>
+                <th>Браузер</th>
+                <th>Посещения</th>
+                <th>%</th>
+            </tr>
+            <tr class="row1">
+                <td>Mozilla Firefox</td>
+                <td>126</td>
+                <td>59%</td>
+            </tr>
+            <tr class="row2">
+                <td>Google Chrome</td>
+                <td>78</td>
+                <td>28%</td>
+            </tr>
+            <tr class="row3">
+                <td>Safari</td>
+                <td>34</td>
+                <td>13%</td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+
+table {
+    width: auto;
+    height: auto;
+    border-collapse: collapse;
+    /*width: 300px;*/
+    width: 100%;
+    height: 250px;
+
+}
+
+td {
+    padding: 5px;
+    padding-right: 10px;
+    border: 1px solid black;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+caption {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+
+Цель 1: С помощью CSS задайте ширину таблицы 300px.
+Цель 2: Затем измените ширину таблицы на 100%.
+Цель 3: Задайте высоту таблицы 250px.
+
+
+
+
+
+
+
+Задаём размеры отдельных ячеек и столбцов [22/23]
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Задаём размеры отдельных ячеек и столбцов</title>
+    </head>
+    <body>
+        <table>
+            <caption>Распределение браузеров</caption>
+            <tr>
+                <th style="width: 60%;">Браузер</th>
+                <th style="width: 20%;">∑</th>
+                <th style="width: 20%;">%</th>
+            </tr>
+            <tr class="row1">
+                <td>Mozilla Firefox</td>
+                <td>126</td>
+                <td>59%</td>
+            </tr>
+            <tr class="row2">
+                <td>Google Chrome</td>
+                <td>78</td>
+                <td>30%</td>
+            </tr>
+            <tr class="row3">
+                <td>Safari</td>
+                <td>34</td>
+                <td>11%</td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+
+Цель 1: Пропишите в пустых атрибутах style значение width: 60%; у первой th и width: 20%; у второй и третьей th.
+
+
+
+
+
+
+Испытание: итоговая таблица [23/23]
+
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Испытание: итоговая таблица</title>
+</head>
+<body>
+    <h1>Итоговая таблица</h1>
+    <table>
+        <tr class="white">
+            <th style="background-color:darkcyan; 
+                        text-align:left;">Город</th>   
+            <th style="text-align:center; 
+                        background-color:lightblue;">Посещений</th>     
+            <th style="text-align:right;
+                        background-color:darkcyan;">%</th>
+        </tr>
+        <tr>
+            <td>СПб</td>
+            <td style="text-align:center;">199</td>
+            <td style="text-align:right;">65.12</td>
+        </tr>
+        <tr style="background-color:lightyellow;
+                  border-bottom: 1px solid lightgray;
+                  border-top: 1px solid lightgray;">
+            <td>Москва</td>   
+            <td style="text-align:center;">69</td>  
+            <td style="text-align:right;">21.3</td>
+            </tr>
+        <tr>
+            <td>Киев</td>  
+            <td style="text-align:center;">5</td>        
+            <td style="text-align:right;">8</td>
+        </tr>
+      
+        <tr style="background-color:lightyellow;
+                  border-bottom: 1px solid lightgray;
+                  border-top: 1px solid lightgray;">
+            <td colspan="2">Посещений за весь период</td>  
+            <td style="text-align:right;">273</td>
+        </tr>   
+        </table>
+    </body>
+</html>
+
+
+
+
+body {
+    width: 350px;
+    margin: 0;
+    padding: 0 10px;
+    font-size: 14px;
+    font-family: Arial;
+}
+td {
+width:33%;
+padding:10px;
+}
+table {
+border-collapse:collapse;
+padding: 5px;
+width:100%;
+}
+.white {
+color: white;
+border-bottom: 1px solid black;
+border-top: 1px solid black;
+}
+th {
+width:33%;
+padding:10px;
+}
+
+Повторить
+
+
+
+
+
+
+
+
+
+
+

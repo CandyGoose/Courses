@@ -1,0 +1,51 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 450px;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  padding: 0 20px;
+  margin: 0;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px 20px;
+}
+
+tr:nth-child(even) {
+  background-color: #eeeeee;
+}
+
+td:first-child {
+  padding-right: 0;
+  font-style: italic;
+  color: #999999;
+}
+
+td:nth-child(3) {
+  padding-left: 0px;
+}
+
+td:last-child {
+  padding-right: 20px;
+  text-align: right;
+  font-weight: bold;
+}
+
+img.silver {
+  padding-left: 20px;
+}
