@@ -1,0 +1,26 @@
+body{
+    width: 350px;
+    margin: 0;
+    padding: 0 10px;
+    font-size: 14px;
+    font-family: Arial;
+}
+caption{
+    border-collapse:collapse;
+    caption-side:bottom;
+    text-align:center;
+}
+table{
+    border-collapse:collapse;
+}
+th{ 
+    border-collapse:collapse;
+    padding:10px;
+    border-collapse:collapse;
+    border-bottom:2px solid black;
+}
+td{
+    border-collapse:collapse;
+    padding:10px;
+    border:1px solid lightgray;   
+}

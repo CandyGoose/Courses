@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Объединяем ячейки в столбцах</title>
+    </head>
+    <body>
+        <table>
+            <caption>Распределение браузеров</caption>
+            <tr>
+                <th rowspan="2">Браузер</th>
+                <th colspan="2">Посещения</th>
+            </tr>
+            <tr>
+                <!--<th class="pink"></th>-->
+                <th>Количество</th>
+                <th>В процентах</th>
+            </tr>
+            <tr>
+                <td>Mozilla Firefox</td>
+                <td>163</td>
+                <td>59%</td>
+            </tr>
+            <tr>
+                <td>Google Chrome</td>
+                <td>78</td>
+                <td>28%</td>
+            </tr>
+            <tr>
+                <td>Safari</td>
+                <td>35</td>
+                <td>13%</td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+<!-- Объединяем ячейки в столбцах [13/23]
+Цель 1: Добавьте ячейке с надписью Браузер атрибут rowspan="2". Смотрите, как сместилась ячейка снизу.
+Цель 2: Удалите ячейку c классом pink и розовым фоном во второй строке.
+Цель 3: Измените значение свойства border-collapse с separate на collapse. -->

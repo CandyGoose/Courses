@@ -1,0 +1,25 @@
+body {
+    width: 350px;
+    margin: 0;
+    padding: 0 10px;
+    font-size: 14px;
+    font-family: Arial;
+}
+td {
+    width:33%;
+    padding:10px;
+}
+table {
+    border-collapse:collapse;
+    padding: 5px;
+    width:100%;
+}
+.white {
+    color: white;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    }
+th {
+    width:33%;
+    padding:10px;
+}
