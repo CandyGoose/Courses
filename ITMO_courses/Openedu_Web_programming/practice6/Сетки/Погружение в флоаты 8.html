@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Поггружение в флоаты</title>
+       <meta charset="utf-8">
+       <link href="//fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="block block1">.block1</div>
+            <p>Как и позиционирование, float используется для того, чтобы двигать боксы.</p>
+            <div class="block block2">.block2</div>
+            <p>Но в отличие от позиционирования, которым можно двигать боксы практически произвольно, все, что может float — это сдвинуть элемент к одной из сторон потока, правой или левой.</p>
+            <p><img src="http://softwaremaniacs.org/media/blog/float-behavior.png" width="100"> При этом сам бокс и следующие за ним в потоке приобретают интересное поведение: float'нутый бокс смещается по горизонтали и прилипает к одной из сторон родителя.</p>
+        </div>        
+    </body>
+</html>
+
+<!-- Погружение в флоаты [8/32]
+Цель 1: .block1 и изображению задайте флоат влево.
+Цель 2: .block2 задайте флоат вправо.
+Цель 3: Чтобы текст не прилипал, задайте маргин справа 10px изображению и .block1, маргин слева 10px для .block2. -->

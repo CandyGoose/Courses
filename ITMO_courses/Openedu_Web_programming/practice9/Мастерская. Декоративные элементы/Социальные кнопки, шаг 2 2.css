@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+}
+
+.share {
+    width: 270px;
+    margin: 0 auto;
+    margin-top: 120px;
+    padding: 10px;
+    padding-left: 20px;
+    background: #ecf0f1;
+}
+
+.share b {
+    margin-right: 15px;
+    color: #7f8c8d;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.social {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #bdc3c7;
+    margin-right: 10px;
+    vertical-align: middle;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>float vs inline-block</title>
+       <meta charset="utf-8">
+       <link href="//fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Каталог в три колонки</h1>
+            <div class="catalog">
+                <div class="item">Товар</div>            
+                <div class="item">Товар</div>
+                <div class="item">Товар</div>
+                <div class="item">Товар</div>
+                <div class="item">Товар</div>            
+                <div class="item">Товар</div>
+                <div class="item">Товар</div>
+                <div class="item">Товар</div>
+            </div>                
+        </div>
+    </body>
+</html>
+
+<!-- inline-block и пробелы в коде [31/32]
+Цель 1: 1 способ: задайте для .catalog нулевой размер шрифта,
+Цель 2: а для .item размер шрифта 16px.
+Цель 3: 2 способ: верните .catalog размер шрифта 16px и уменьшите у .item маргин справа до 15px. -->

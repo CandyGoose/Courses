@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Простейшая сетка, финал</title>
+       <meta charset="utf-8">
+       <link href="//fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">Хедер</div>
+            <div class="content-container clearfix">
+                <div class="sidebar">
+                    <p>Для нужного нам эффекта мы дадим основному блоку левый margin, чтобы он ужался направо, а боковую панель заfloat'им.</p>
+                </div>
+                <div class="content">
+                    <p>У этого способа есть один очень серьезный недостаток. Обратите внимание, что в исходном HTML блок "sidebar" идет до блока "content" с основным содержимым. Не нужно думать, что так сделано случайно. Так сделано специально, потому что иначе этот самый способ с наложением колонки поверх margin'а не работал бы.</p>
+                </div>
+            </div>
+            <div class="footer">Футер</div>
+        </div>
+    </body>
+</html>
+
+<!-- Простейшая сетка, финал [19/32]
+Цель 1: Задайте для .content маргин слева 170px.
+Цель 2: Измените ширину .wrapper на 350px,
+Цель 3: а затем на 550px. -->

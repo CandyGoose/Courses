@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Борьба с выпаданием флоатов: псевдораспорки</title>
+       <meta charset="utf-8">
+       <link href="//fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Выпадание из родителя</h1>
+            <!-- ↓ Класс добавьте этому блоку -->
+            <!--<div class="columns-container clearfix">-->
+            <div class="columns-container clearfix-visible">
+                <div class="column column1">
+                    .column1<br>
+                    Первая колонка
+                </div>
+                <div class="column column2">
+                    .column2
+                    Вторая колонка
+                </div>
+            </div>
+        </div>        
+    </body>
+</html>
+
+
+<!-- Борьба с выпаданием флоатов: псевдораспорки [16/32]
+Цель 1: Добавьте диву с классом columns-container класс clearfix.
+Цель 2: Затем замените класс clearfix на clearfix-visible, чтобы увидеть псевдоэлемент-распорку. -->

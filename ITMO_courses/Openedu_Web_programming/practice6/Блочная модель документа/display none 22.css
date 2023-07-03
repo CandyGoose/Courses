@@ -1,0 +1,35 @@
+div {
+    margin: 5px;
+    padding: 5px;
+    border: 1px dotted white;
+}
+
+.table {
+    display: table;
+    padding: 0;
+    border-spacing: 5px;
+    background: #D9EDF7;
+    border-color: #3A87AD;
+}
+
+.row {
+    display: table-row;
+    background: #F2DEDE;
+    border-color: #B94A48;
+}
+
+.cell {
+    display: table-cell;
+    background: #FBEED5;
+    border-color: #C09853;
+}
+
+.row-2 {
+    /*display: none;*/
+    visibility: hidden;
+}
+
+.cell-3-1 {
+    /*display: none;*/
+    visibility: hidden;
+}

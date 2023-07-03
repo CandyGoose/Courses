@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Неявная точка отсчета</title>
+    </head>
+    <body>
+        <div class="block">Что будет, если какому-нибудь элементу задать абсолютное позиционирование, <span class="inline-absolute">но при этом</span> не задавать никаких свойств, влияющих на его расположение (например, left)?</div>
+        
+        <div class="block">Такой элемент выпадет из <span class="inline-absolute">потока</span>, но останется на том месте, где был расположен до <span class="inline-absolute">этого.</span></div>
+    </body>
+</html>
+
+<!-- Неявная точка отсчета [16/20]
+Задайте элементам с классом inline-absolute:
+Цель 1: абсолютное позиционирование,
+Цель 2: отступ сверху (margin) -15px,
+Цель 3: отступ слева (margin) 15px. -->

@@ -1,0 +1,36 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.achievment {
+    position: relative;
+    width: 200px;
+    min-height: 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding-left: 70px;
+}
+
+.badge {
+    width: 44px;
+    height: 44px;
+    border: 3px solid #e5e5e5;
+    border-radius: 4px;
+    background-color: #7fc3e5;
+    background-image: url('/assets/course10/medal.png');
+    position: absolute;
+    left: 10px;
+}
+
+.title {
+    margin-bottom: 3px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 12px;
+    color: #666;
+}

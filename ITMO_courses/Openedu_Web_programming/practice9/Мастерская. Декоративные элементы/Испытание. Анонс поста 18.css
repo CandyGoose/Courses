@@ -1,0 +1,93 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 280px;
+    min-height: 250px;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+    font-family: "Arial", sans-serif;
+    line-height: 1.2;
+    color: #7f8c8d;
+    background: #ecf0f1;
+}
+
+.post-stats .icon {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("/assets/course14/post-challenge.png") no-repeat;
+}
+
+.post {
+    position: relative;
+    padding-left: 75px;
+}
+
+.post-title {
+    font-size: 20px;
+    color: #2980b9;
+    margin-bottom: 5px;
+}
+
+.post-date,
+.post-type {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border-bottom: 5px solid #bdc3c7;
+}
+
+.post-date {
+    top: 0;
+    left: 0;
+    line-height: 55px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    background: #ffffff;
+}
+
+.post-type {
+    top: 70px;
+    left: 0;
+    background: url("/assets/course14/quotes.png") #7f8c8d no-repeat 50% 50%;
+}
+
+.post-author {
+    padding-bottom: 5px;
+}
+
+.post a {
+    text-decoration: none;
+    color: #2980b9;
+}
+
+.post .post-stats {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    padding-left: 20px;
+}
+
+.post-stats .icon-tags {
+    background-position: 0 0;    
+}
+
+.post-stats .icon-comments {
+    background-position: -20px 0;
+}
+
+.post-text {
+    width: 175px;
+    padding: 10px 15px;
+    border-bottom: 5px solid #bdc3c7; 
+    background: #ffffff;
+    margin-top: 20px
+}

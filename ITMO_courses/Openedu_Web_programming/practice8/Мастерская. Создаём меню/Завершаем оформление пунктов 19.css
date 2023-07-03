@@ -1,0 +1,29 @@
+body {
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.main-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px solid #E5E5E5;
+}
+
+.main-menu li {
+    display:inline-block;
+    margin-right: -4px;
+}
+
+.main-menu a {
+    display: block;
+    padding: 8px 10px;
+    color: #0088CC;
+    border-left: 1px solid #E5E5E5;
+    margin-left: -1px;
+}
+.main-menu a:hover{
+    background: #F5F5F5;
+}

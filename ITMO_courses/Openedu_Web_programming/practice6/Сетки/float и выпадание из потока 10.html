@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>float и выпадание из потока</title>
+       <meta charset="utf-8">
+       <link href="//fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Прохождение сквозь блоки</h1>
+            <div class="block block1">
+                .block1
+            </div>
+            <p>Следующие за float'ным <em>блочные</em> боксы подтягиваются вверх и занимают его место, как если бы float'нутого бокса в потоке не было.</p>
+            <p><em>Строчные</em> же боксы внутри подвинувшихся наверх блоков начинают обтекать float'нутый бокс со свободной стороны.</p>
+            
+            <h1>Выпадание из родителя</h1>
+            <div class="columns-container">
+                <div class="block block2">
+                    .block2<br>
+                    Первая колонка
+                </div>
+                <div class="block block3">
+                    .block3
+                    Вторая колонка
+                </div>
+            </div>
+        </div>        
+    </body>
+</html>
+
+<!-- float и выпадание из потока [10/32]
+Цель 1: .block1 задайте флоат влево, маргин справа 10px.
+Цель 2: А затем .block1 задайте высоту 100px.
+Цель 3: .block2 задайте флоат влево.
+Цель 4: .block3 задайте флоат вправо. -->

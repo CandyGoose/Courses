@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>«Мультиселект»</title>
+    </head>
+    <body>
+        <h1>Анкета</h1>
+
+        <form action="/echo" method="post">
+            <p>В мультиселекте можно выбрать несколько вариантов, щёлкая по ним с зажатой клавишей Ctrl на Windows или Command на OS X.</p>
+
+            <p><i>Любимые дни недели:</i></p>
+            <select name="days[]" multiple size="7">
+                <option>Понедельник</option>
+                <option>Вторник</option>
+                <option>Среда</option>
+                <option>Четверг</option>
+                <option>Пятница</option>
+                <option>Суббота</option>
+                <option selected>Воскресенье</option>
+            </select>
+
+            <input type="submit" value="Отправить">
+        </form>
+    </body>
+</html>
+
+<!-- «Мультиселект» [15/18]
+Цель 1: Сделайте раскрывающийся список мультиселектом.
+Цель 2: Измените его имя на days[].
+Цель 3: Увеличьте его размер до 7.
+Цель 4: Сделайте, чтобы по умолчанию было отмечено воскресенье. -->

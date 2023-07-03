@@ -1,0 +1,99 @@
+html {
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+}
+
+.scene {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    background: none;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+div {
+    display: inline-block;
+    background: white;
+}
+
+/* горизонтальные элементы */
+.h {
+    width: 50px;
+    height: 10px;
+    position:absolute
+}
+
+.h3 {
+    width: 40px;
+}
+
+/* вертикальные элементы */
+.v {
+    width: 10px;
+    height: 50px;
+    position:absolute
+}
+.v1{
+    left:20px;top:170px
+}
+.v2{
+    left:60px;top:170px
+}
+.v3{
+    left:100px;top:170px
+}
+.v4{
+    left:140px;top:170px
+}
+.v5{
+    left:180px;top:170px
+}
+.v6{
+    left:200px;top:170px
+}
+.h1{
+    left:20px;top:190px
+}
+.h2{
+    left:80px;top:170px
+}
+.h3{
+    left:200px;top:210px
+}
+.corner-top{
+    left:150px;top:170px;position:absolute
+}
+.corner-bottom{
+    left:150px;top:190px;position:absolute
+}
+
+/* уголки */
+    .corner-top {
+    border: 15px solid white;
+    border-top-width: 20px;
+    border-bottom-width: 0;
+    border-top-color: transparent;
+    background: none;
+}
+
+.corner-bottom {
+    border: 15px solid transparent;
+    border-top-width: 20px;
+    border-bottom-width: 0;
+    border-top-color: white;
+    background: none;
+}
+
+/* лого */
+.logo {
+    width: 64px;
+    height: 64px;
+    background: url('/assets/course10/logo.png');
+    position:absolute;
+    top:80px;
+    left:87px
+}

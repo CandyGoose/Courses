@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 20px;
+}
+
+.block {
+    padding: 10px;
+    color: white;
+    text-align: right;
+    opacity: 0.8;
+}
+
+.block-1 {
+    width: 350px;
+    height: 350px;
+    background: #3A78A1;
+    position: relative;
+    z-index: 200;
+}
+
+.block-2 {
+    position: absolute;
+    top: 20px;
+    width: 250px;
+    height: 250px;
+    background: #E74C3C;
+    z-index: 100;
+}
+
+.block-3 {
+    position: absolute;
+    top: 20px;
+    width: 150px;
+    height: 150px;
+    background: #27AE60;
+}
